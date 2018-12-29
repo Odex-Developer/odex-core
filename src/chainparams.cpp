@@ -183,6 +183,8 @@ public:
         assert(hashGenesisBlock == uint256("0x00000eec3130c1dae85736c987cd2e0443db34bab6c8aad364682a23d6950eaa"));
         assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
 
+        vSeeds.push_back(CDNSSeedData("149.28.57.251", "149.28.57.251"));
+
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 115); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 204);
@@ -306,6 +308,7 @@ public:
         assert(hashGenesisBlock == uint256("0x00000ccb905aef2fbeca647eb7b27782fbacebab25ae16dc96bbedd6237d57a9"));
         assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
 
+        vSeeds.push_back(CDNSSeedData("149.28.57.251", "149.28.57.251"));
         vFixedSeeds.clear();
         vSeeds.clear();
         //vSeeds.push_back(CDNSSeedData("testnet01.mempool.pw", "testnet01.mempool.pw"));

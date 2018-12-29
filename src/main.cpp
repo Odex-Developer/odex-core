@@ -2143,29 +2143,29 @@ int64_t GetBlockValue(int blockHeight)
     if (blockHeight == 0){
         nSubsidy = 300000 * COIN;
     } else if (blockHeight <  100 && blockHeight >= 1) {
-        nSubsidy = 1;
+        nSubsidy = 1 * COIN;
     } else if (blockHeight <  500 && blockHeight >= 100) {
-        nSubsidy = 1.25;
+        nSubsidy = 1.25 * COIN;
     } else if (blockHeight <  10000 && blockHeight >= 500) {
-        nSubsidy = 1.5;
+        nSubsidy = 1.5 * COIN;
     } else if (blockHeight <  265000 && blockHeight >= 10000) {
-        nSubsidy = 5;
+        nSubsidy = 5 * COIN;
     } else if (blockHeight <  530000 && blockHeight >= 265000) {
-        nSubsidy = 4.5;
+        nSubsidy = 4.5 * COIN;
     } else if (blockHeight <  1060000 && blockHeight >= 530000) {
-        nSubsidy = 4;
+        nSubsidy = 4 * COIN;
     } else if (blockHeight <  1590000 && blockHeight >= 1060000) {
-        nSubsidy = 3.5;
+        nSubsidy = 3.5 * COIN;
     } else if (blockHeight <  2120000 && blockHeight >= 1590000) {
-        nSubsidy = 3;
+        nSubsidy = 3 * COIN;
     } else if (blockHeight <  2650000 && blockHeight >= 2120000) {
-        nSubsidy = 2;
+        nSubsidy = 2 * COIN;
     } else if (blockHeight <  3180000 && blockHeight >= 2650000) {
-        nSubsidy = 1.4;
+        nSubsidy = 1.4 * COIN;
     } else if (blockHeight <  3710000 && blockHeight >= 3180000) {
-        nSubsidy = 1.05;
+        nSubsidy = 1.05 * COIN;
     } else if (blockHeight >= 3710000) {
-        nSubsidy = 0.75;
+        nSubsidy = 0.75 * COIN;
     }
     return nSubsidy;
 }

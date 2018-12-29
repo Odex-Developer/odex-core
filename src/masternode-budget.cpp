@@ -857,19 +857,19 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
 
     // keep same schedule even with PoS move
     if (nHeight >= Params().LAST_POW_BLOCK()) {
-        nSubsidy = 4;
+        nSubsidy = 4 * COIN;
     } else if (nHeight <  1590000 && nHeight >= 1060000) {
-        nSubsidy = 3.5;
+        nSubsidy = 3.5 * COIN;
     } else if (nHeight <  2120000 && nHeight >= 1590000) {
-        nSubsidy = 3;
+        nSubsidy = 3 * COIN;
     } else if (nHeight <  2650000 && nHeight >= 2120000) {
-        nSubsidy = 2;
+        nSubsidy = 2 * COIN;
     } else if (nHeight <  3180000 && nHeight >= 2650000) {
-        nSubsidy = 1.4;
+        nSubsidy = 1.4 * COIN;
     } else if (nHeight <  3710000 && nHeight >= 3180000) {
-        nSubsidy = 1.05;
+        nSubsidy = 1.05 * COIN;
     } else if (nHeight >= 3710000) {
-        nSubsidy = 0.75;
+        nSubsidy = 0.75 * COIN;
     } else {
         nSubsidy = 0 * COIN;
     }
