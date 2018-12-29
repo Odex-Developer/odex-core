@@ -53,7 +53,10 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //   (no blocks before with a timestamp after, none after with
 //    timestamp before)
 // + Contains no strange transactions
-static Checkpoints::MapCheckpoints mapCheckpoints;
+static Checkpoints::MapCheckpoints mapCheckpoints =
+    boost::assign::map_list_of
+        (0, uint256("0x00000eec3130c1dae85736c987cd2e0443db34bab6c8aad364682a23d6950eaa"));
+
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1538006698,// * UNIX timestamp of last checkpoint block
@@ -62,7 +65,10 @@ static const Checkpoints::CCheckpointData data = {
     2000        // * estimated number of transactions per day after checkpoint
 };
 
-static Checkpoints::MapCheckpoints mapCheckpointsTestnet;
+static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
+    boost::assign::map_list_of
+        (0, uint256("0x00000ccb905aef2fbeca647eb7b27782fbacebab25ae16dc96bbedd6237d57a9"));
+
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1514516171,
@@ -143,16 +149,17 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1546061077;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();;
-        genesis.nNonce = 0;
+        genesis.nNonce = 1269143;
 
   	    hashGenesisBlock = genesis.GetHash();
 
+        /*
         if(genesis.GetHash() != uint256S("0x"))
         {
               printf("MSearching for genesis block...\n");
-              arith_uint256 hashTarget;
+              uint256 hashTarget;
               hashTarget.SetCompact(genesis.nBits);
-              while(UintToArith256(genesis.GetHash()) > hashTarget)
+              while(uint256(genesis.GetHash()) > hashTarget)
               {
                   ++genesis.nNonce;
                   if (genesis.nNonce == 0)
@@ -171,9 +178,10 @@ public:
               printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
               printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         }
+        */
 
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x00000eec3130c1dae85736c987cd2e0443db34bab6c8aad364682a23d6950eaa"));
+        assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 115); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 16);
@@ -263,17 +271,18 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1537896086;
-        genesis.nNonce = 2334133;
+        genesis.nNonce = 2385723;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
 
         hashGenesisBlock = genesis.GetHash();
 
+        /*
         if(genesis.GetHash() != uint256S("0x"))
         {
               printf("MSearching for genesis block...\n");
-              arith_uint256 hashTarget;
+              uint256 hashTarget;
               hashTarget.SetCompact(genesis.nBits);
-              while(UintToArith256(genesis.GetHash()) > hashTarget)
+              while(uint256(genesis.GetHash()) > hashTarget)
               {
                   ++genesis.nNonce;
                   if (genesis.nNonce == 0)
@@ -292,9 +301,10 @@ public:
               printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
               printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         }
+        */
 
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x00000ccb905aef2fbeca647eb7b27782fbacebab25ae16dc96bbedd6237d57a9"));
+        assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
 
         vFixedSeeds.clear();
         vSeeds.clear();

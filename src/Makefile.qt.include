@@ -225,7 +225,7 @@ BITCOIN_QT_H = \
 
 RES_FONTS = \
   qt/res/fonts/Roboto-Bold.ttf \
-  qt/res/fonts/Roboto-Medium.ttf 
+  qt/res/fonts/Roboto-Medium.ttf
 
 RES_ICONS = \
   qt/res/icons/history_m.png \
@@ -289,13 +289,7 @@ RES_ICONS = \
   qt/res/icons/tx_inout.png \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
-  qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_odex.png \
-  qt/res/icons/unit_modex.png \
-  qt/res/icons/unit_uodex.png \
-  qt/res/icons/unit_todex.png \
-  qt/res/icons/unit_tmodex.png \
-  qt/res/icons/unit_tuodex.png
+  qt/res/icons/tx_mined.png
 
 BITCOIN_QT_CPP = \
   qt/bantablemodel.cpp \
@@ -468,7 +462,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name odex_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H) 
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name odex $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
