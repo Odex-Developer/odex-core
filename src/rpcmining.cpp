@@ -333,7 +333,7 @@ static UniValue BIP22ValidationResult(const CValidationState& state)
 
 UniValue getblocktemplate(const UniValue& params, bool fHelp)
 {
-    int lastPoWBlock = IsSporkActive(SPORK_19_POW_ROLLBACK) ? Params().LAST_POW_BLOCK_OLD() : Params().LAST_POW_BLOCK();
+    int lastPoWBlock = Params().LAST_POW_BLOCK();
 
     if (fHelp || params.size() > 1)
         throw runtime_error(
@@ -534,8 +534,8 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
         // Need to update only after we know CreateNewBlock succeeded
         pindexPrev = pindexPrevNew;
     }
-	
-	
+
+
     CBlock* pblock = &pblocktemplate->block; // pointer for convenience
 
     // Update nTime
@@ -573,7 +573,7 @@ UniValue getblocktemplate(const UniValue& params, bool fHelp)
 
         transactions.push_back(entry);
     }
-	
+
 	UniValue coinbasetxn(UniValue::VARR);
     map<uint256, int64_t> setTxIndex1;
     int j = 0;

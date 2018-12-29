@@ -611,7 +611,7 @@ bool CBudgetManager::IsBudgetPaymentBlock(int nBlockHeight)
         If budget doesn't have 5% of the network votes, then we should pay a masternode instead
     */
     if (nHighestCount > mnodeman.CountEnabled(ActiveProtocol()) / 20) return true;
-    LogPrintf("CBudgetManager::IsBudgetPaymentBlock() - nHighestCount: %lli, 5%% of Masternodes: %lli. Number of budgets: %lli\n", 
+    LogPrintf("CBudgetManager::IsBudgetPaymentBlock() - nHighestCount: %lli, 5%% of Masternodes: %lli. Number of budgets: %lli\n",
               nHighestCount, nFivePercent, mapFinalizedBudgets.size());
 
     return false;
@@ -656,7 +656,7 @@ bool CBudgetManager::IsTransactionValid(const CTransaction& txNew, int nBlockHei
         ++it;
     }
 
-    LogPrint("masternode","CBudgetManager::IsTransactionValid() - nHighestCount: %lli, 5%% of Masternodes: %lli mapFinalizedBudgets.size(): %ld\n", 
+    LogPrint("masternode","CBudgetManager::IsTransactionValid() - nHighestCount: %lli, 5%% of Masternodes: %lli mapFinalizedBudgets.size(): %ld\n",
               nHighestCount, nFivePercent, mapFinalizedBudgets.size());
     /*
         If budget doesn't have 5% of the network votes, then we should pay a masternode instead
@@ -865,7 +865,7 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
     }
 
     // keep same schedule even with PoS move
-    if (nHeight <= 432000 && nHeight >= Params().LAST_POW_BLOCK_OLD()) {
+    if (nHeight <= 432000 && nHeight >= Params().LAST_POW_BLOCK {
         nSubsidy = 25 * COIN;
     } else if (nHeight <= 518400 && nHeight > 432000) {
         nSubsidy = 21.875 * COIN;
