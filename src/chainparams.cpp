@@ -68,7 +68,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         (95600, uint256("0000000000084e401f85d9f393e2d61428352f20bbb51ccfe2483e49423b89ce"))
         (173559, uint256("0000000000002b887e1d437a7a41dc628f96f45c1cc63f13e9fb518ca1ae3883"))
         (273433, uint256("65e0e26d76bb5e3fc27fe0fefd9071f5d3a705b2d26ee76b20b9481217425dc2"));
- 
+
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1538006698,// * UNIX timestamp of last checkpoint block
@@ -119,14 +119,14 @@ public:
         pchMessageStart[2] = 0x01;
         pchMessageStart[3] = 0x17;
 	    vAlertPubKey = ParseHex("04579f18934b3ef39094a9999e45506a1935662d0cd4e504d07beb53b8a1bfd78d81bee47e65119318397809420d5320e3c7b2aaae58580db48c38a4e6d4f0f919");
-        nDefaultPort = 52543;
+        nDefaultPort = 20149;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Odex starting difficulty is 1 / 2^12
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 90; // Odex: 1.5 minutes
         nTargetSpacingSlowLaunch = 5 * 90;  // Odex: 7.5 minutes (Slow launch - Block 300)
 	    nTargetSpacing = 1 * 90; // Odex: 1.5min after block 300
-        nLastPOWBlock = 182700; 
+        nLastPOWBlock = 182700;
         nLastPOWBlockOld = 345600; // 1 year
 		nLastSeeSawBlock = 200000; // last block for seesaw rewards
 	    nRampToBlock = 960; // Slow start, ramp linearly to this block
@@ -134,7 +134,7 @@ public:
 	    nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1;
 	    nMaxMoneyOut = 21525720 * COIN; // Year 2
-	
+
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
@@ -162,26 +162,14 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1512131946;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();;
-        genesis.nNonce = 125854; 
+        genesis.nNonce = 125854;
 
 	    hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x0000068e7ab8e264f6759d2d81b29e8b917c10b04db47a9a0bb3cba3fba5d574"));
 	    assert(genesis.hashMerkleRoot == uint256("0x77976d6bd593c84063ac3937525bc15e25188d96871b13d4451ffc382999f64f"));
 
-        vSeeds.push_back(CDNSSeedData("odexseed.mempool.pw", "odexseed.mempool.pw"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed1.odexcrypto.com", "odexseed1.odexcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed2.odexcrypto.com", "odexseed2.odexcrypto.com")); 	 // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed3.odexcrypto.com", "odexseed3.odexcrypto.com"));      // Single node address
-	    vSeeds.push_back(CDNSSeedData("odexseed4.odexcrypto.com", "odexseed4.odexcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed5.odexcrypto.com", "odexseed5.odexcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed1.odexcrypto.site", "odexseed1.odexcrypto.site"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed2.odexcrypto.site", "odexseed2.odexcrypto.site")); 	 // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed3.odexcrypto.site", "odexseed3.odexcrypto.site"));      // Single node address
-	    vSeeds.push_back(CDNSSeedData("odexseed4.odexcrypto.site", "odexseed4.odexcrypto.site"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("odexseed5.odexcrypto.site", "odexseed5.odexcrypto.site"));      // Single node address
-        
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // b
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18); 
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
@@ -202,7 +190,7 @@ public:
 	    nPoolMaxTransactions = 3;
         strSporkKey = "0453748e298a34e32d760a3d64b7b517c952c10024a4160a3a746d9bce572f85e13ac6d4f518ac110ba807ce19fb657bc2696ca02013290e3fbe517adf09c95787";
         strObfuscationPoolDummyAddress = "bDiJwVuKv9dcKBN4KCfX6UmXbkpqLfzGyf";
-        nStartMasternodePayments = 1511092620; 
+        nStartMasternodePayments = 1511092620;
 
         /** Zerocoin */
         zerocoinModulus = "b2275261dcaa303374af30576c5f676c8c2f1596aae7814f932f08839d442a5b2f7eaac75ffe9481321cbaae1c48703eff"
@@ -249,7 +237,7 @@ public:
         pchMessageStart[3] = 0xa0;
 
 	    vAlertPubKey = ParseHex("04795fde7bfc6347248a901aca81dd6a9f3acdeb5272f1c831f5147b139a4e1bacaa253541d9ebdfba982fb5cc45df3e34a8e98cdce9329037f009af217bc64ed9");
-        nDefaultPort = 42133;
+        nDefaultPort = 21149;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 15; // 30 Seconds
         nTargetSpacing = 1 * 15;  // 30 Seconds
@@ -272,7 +260,7 @@ public:
         genesis.nTime = 1537896086;
         genesis.nNonce = 2334133;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
-        
+
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000f8390c6d8820091f16f24b5d299a38d91372398288a5d67e84680eb0bf3"));
         assert(genesis.hashMerkleRoot == uint256("0x77976d6bd593c84063ac3937525bc15e25188d96871b13d4451ffc382999f64f"));

@@ -20,8 +20,8 @@ Odex offers both SwiftTX and Obfuscation to enable speedy transactions with a Se
 |-----------------------|-----------------------------------------|
 | Ticker                | ODEX                                     |
 | Algorithm             | NIST5                                   |
-| RPC Port              | 52541                                   |
-| P2P Port              | 52543                                   |
+| RPC Port              | 20150                                   |
+| P2P Port              | 20149                                   |
 | Block Spacing         | 90 Seconds                              |
 | Difficulty Algorithm  | Dark Gravity Wave v3.0                  |
 | Block Size            | 1MB                                     |

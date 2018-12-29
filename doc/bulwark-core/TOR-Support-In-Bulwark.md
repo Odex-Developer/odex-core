@@ -70,7 +70,7 @@ config file):
 ```
 
 The directory can be different of course, but (both) port numbers should be equal to
-your odexd's P2P listen port (52541 by default).
+your odexd's P2P listen port (20150 by default).
 
 ```
 -externalip=X   You can tell odex about its publicly reachable address using
