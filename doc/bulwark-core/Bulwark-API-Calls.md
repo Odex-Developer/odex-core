@@ -1,11 +1,11 @@
-# Bulwark API call list (as of version 2.0.0)
+# Odex API call list (as of version 2.0.0)
 
 Common operations
 -----------------
 
-### Listing my Bulwark addresses
+### Listing my Odex addresses
 
-Listing the Bulwark addresses in your wallet is easily done via
+Listing the Odex addresses in your wallet is easily done via
 *listreceivedbyaddress*. It normally lists only addresses which already
 have received transactions, however you can list all the addresses by
 setting the first argument to 0, and the second one to true.
@@ -40,9 +40,9 @@ inside [ and ].
 | Control |
 | `getinfo` |   | Returns an object containing various state info. | N |
 | `help` | [command] | List all commands, or get help for a specified command. | N |
-| `stop` |   | Stop bwk server. | N |
+| `stop` |   | Stop odex server. | N |
 | Generating |
-| `getgenerate` |   | **PoW Only** Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or bwk.conf setting gen) It can also be set with the setgenerate call. | N |
+| `getgenerate` |   | **PoW Only** Return if the server is set to generate coins or not. The default is false. It is set with the command line argument -gen (or odex.conf setting gen) It can also be set with the setgenerate call. | N |
 | `setgenerate` |  [genproclimit] | **PoW Only** Set 'generate' true or false to turn generation on or off. Generation is limited to 'genproclimit' processors, -1 is unlimited. See the getgenerate call for the current setting. | N |
 | Mining |
 | `getblocktemplate` | [jsonrequestobject] | **PoW Only** Returns data needed to construct a block to work on. | N |
@@ -63,7 +63,7 @@ inside [ and ].
 | `listbanned` |   | **version 3.1.0** List all banned IPs/Subnets. | N |
 | `ping` |   | Requests that a ping be sent to all other nodes, to measure ping time. | N |
 | `setban` |   [bantime] [absolute] | **version 3.1.0** Attempts add or remove a IP/Subnet from the banned list. | N |
-| Bulwark |
+| Odex |
 | `checkbudgets` |   | Initiates a buddget check cycle manually. | N |
 | `createmasternodekey` |   | Create a new masternode private key. | N |
 | `getbudgetinfo` | [proposal] | Show current masternode budgets with optional filter by proposal name. | N |
@@ -102,15 +102,15 @@ inside [ and ].
 | `createmultisig` |  <'["key",...]'> | Creates a multi-signature address with n signature of m keys required. | N |
 | `estimatefee` |  | Estimates the approximate fee per kilobyte needed for a transaction to begin confirmation within nblocks blocks. | N |
 | `estimatepriority` |  | Estimates the approximate priority a zero-fee transaction needs to begin confirmation within nblocks blocks. | N |
-| `validateaddress` |  | Return information about the given bwk address. | N |
+| `validateaddress` |  | Return information about the given odex address. | N |
 | `verifymessage` |    | Verify a signed message. | N |
 | Wallet |
-| `addmultisigaddress` |  <'["key",...]'> [account] | Add a nrequired-to-sign multisignature address to the wallet. Each key is a bwk address or hex-encoded public key. If 'account' is specified, assign address to that account. | Y/N |
-| `autocombinerewards` |  [threshold] | Wallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same bwk address. | Y |
+| `addmultisigaddress` |  <'["key",...]'> [account] | Add a nrequired-to-sign multisignature address to the wallet. Each key is a odex address or hex-encoded public key. If 'account' is specified, assign address to that account. | Y/N |
+| `autocombinerewards` |  [threshold] | Wallet will automatically monitor for any coins with value below the threshold amount, and combine them if they reside with the same odex address. | Y |
 | `backupwallet` |  | Safely copies wallet.dat to destination, which can be a directory or a path with filename. | N |
 | `bip38decrypt` |   | Decrypts and then imports password protected private key. | Y |
-| `bip38encrypt` |   | Encrypts a private key corresponding to 'bwkaddress'. | Y |
-| `dumpprivkey` |  | Reveals the private key corresponding to 'bwkaddress'. | Y |
+| `bip38encrypt` |   | Encrypts a private key corresponding to 'odexaddress'. | Y |
+| `dumpprivkey` |  | Reveals the private key corresponding to 'odexaddress'. | Y |
 | `dumpwallet` |  | Dumps all wallet keys in a human-readable format. | Y |
 | `encryptwallet` |  | Encrypts the wallet with . | N |
 | `getaccount` |  | Returns the account associated with the given address. | N |
@@ -118,8 +118,8 @@ inside [ and ].
 | `getaddressesbyaccount` |  | Returns the list of addresses for the given account. | N |
 | `getbalance` | [account] [minconf=1] [includeWatchonly=false] | If [account] is not specified, returns the server's total available balance.  
 If [account] is specified, returns the balance in the account. | N |
-| `getnewaddress` | [account] | Returns a new bwk address for receiving payments. If [account] is specified payments received with the address will be credited to [account]. | Y |
-| `getrawchangeaddress` |   | Returns a new bwk address, for receiving change. This is for use with raw transactions, NOT normal use. | N |
+| `getnewaddress` | [account] | Returns a new odex address for receiving payments. If [account] is specified payments received with the address will be credited to [account]. | Y |
+| `getrawchangeaddress` |   | Returns a new odex address, for receiving change. This is for use with raw transactions, NOT normal use. | N |
 | `getreceivedbyaccount` | [account] [minconf=1] | Returns the total amount received by addresses with [account] in transactions with at least [minconf] confirmations. If [account] not provided return will include all transactions to all accounts. | N |
 | `getreceivedbyaddress` |  [minconf=1] | Returns the amount received by  in transactions with at least [minconf] confirmations. It correctly handles the case where someone has sent to the address in multiple transactions. Keep in mind that addresses are only ever used for receiving transactions. Works only for addresses in the local wallet, external addresses will always show 0. | N |
 | `getstakesplitthreshold` |   | Returns the threshold for stake splitting. | N |
@@ -161,8 +161,8 @@ If [account] is specified, returns the balance in the account. | N |
 | `listmintedzerocoins` |   | Return an array of zerocoin mints. | Y |
 | `listspentzerocoins` |   | Return an array of spent zerocoins. | Y |
 | `listzerocoinamounts` |   | List the denomination amounts held in this wallet. | Y |
-| `mintzerocoin` |  | Mint given amount from PIV to zBWK. | Y |
-| `reconsiderzerocoins` |   | Check archived zBWK list to see if any mints were added to the blockchain.. | Y |
+| `mintzerocoin` |  | Mint given amount from PIV to zODEX. | Y |
+| `reconsiderzerocoins` |   | Check archived zODEX list to see if any mints were added to the blockchain.. | Y |
 | `resetmintzerocoin` | [extended_search] | Scan the blockchain for all of the zerocoins that are held in the wallet.dat. Update any meta-data that is incorrect. | Y |
 | `resetspentzerocoin` |   | Scan the blockchain for all of the zerocoins that are held in the wallet.dat. Reset mints that are considered spent that did not make it into the blockchain. | Y |
-| `spendzerocoin` |      | Spend zBWK to given address with optional reminting of change. | Y |
+| `spendzerocoin` |      | Spend zODEX to given address with optional reminting of change. | Y |

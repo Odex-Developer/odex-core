@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Bulwark developers
+// Copyright (c) 2017-2018 The Odex developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -56,7 +56,7 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"version\": xxxxx,           (numeric) the server version\n"
             "  \"protocolversion\": xxxxx,   (numeric) the protocol version\n"
             "  \"walletversion\": xxxxx,     (numeric) the wallet version\n"
-            "  \"balance\": xxxxxxx,         (numeric) the total bulwark balance of the wallet (excluding zerocoins)\n"
+            "  \"balance\": xxxxxxx,         (numeric) the total odex balance of the wallet (excluding zerocoins)\n"
             "  \"zerocoinbalance\": xxxxxxx, (numeric) the total zerocoin balance of the wallet\n"
             "  \"blocks\": xxxxxx,           (numeric) the current number of blocks processed in the server\n"
             "  \"timeoffset\": xxxxx,        (numeric) the time offset\n"
@@ -65,22 +65,22 @@ UniValue getinfo(const UniValue& params, bool fHelp)
             "  \"difficulty\": xxxxxx,       (numeric) the current difficulty\n"
             "  \"testnet\": true|false,      (boolean) if the server is using testnet or not\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zBWKsupply\" :\n"
+            "  \"zODEXsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zBWK denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zBWK denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zBWK denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zBWK denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zBWK denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zBWK denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zBWK denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zBWK denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zODEX denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zODEX denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zODEX denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zODEX denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zODEX denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zODEX denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zODEX denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zODEX denominations\n"
             "  }\n"
             "  \"keypoololdest\": xxxxxx,    (numeric) the timestamp (seconds since GMT epoch) of the oldest pre-generated key in the key pool\n"
             "  \"keypoolsize\": xxxx,        (numeric) how many new keys are pre-generated\n"
             "  \"unlocked_until\": ttt,      (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked\n"
-            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in bulwark/kb\n"
-            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in bulwark/kb\n"
+            "  \"paytxfee\": x.xxxx,         (numeric) the transaction fee set in odex/kb\n"
+            "  \"relayfee\": x.xxxx,         (numeric) minimum relay fee for non-free transactions in odex/kb\n"
             "  \"staking status\": true|false,  (boolean) if the wallet is staking or not\n"
             "  \"errors\": \"...\"           (string) any error messages\n"
             "}\n"
@@ -107,12 +107,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
     obj.push_back(Pair("difficulty", (double)GetDifficulty()));
     obj.push_back(Pair("testnet", Params().TestnetToBeDeprecatedFieldRPC()));
     obj.push_back(Pair("moneysupply",ValueFromAmount(chainActive.Tip()->nMoneySupply)));
-    UniValue zBWKObj(UniValue::VOBJ);
+    UniValue zODEXObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zBWKObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zODEXObj.push_back(Pair(to_string(denom), ValueFromAmount(chainActive.Tip()->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zBWKObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
-    obj.push_back(Pair("zBWKsupply", zBWKObj));
+    zODEXObj.push_back(Pair("total", ValueFromAmount(chainActive.Tip()->GetZerocoinSupply())));
+    obj.push_back(Pair("zODEXsupply", zODEXObj));
 
 #ifdef ENABLE_WALLET
     if (pwalletMain) {
@@ -299,14 +299,14 @@ UniValue validateaddress(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "validateaddress \"bulwarkaddress\"\n"
-            "\nReturn information about the given bulwark address.\n"
+            "validateaddress \"odexaddress\"\n"
+            "\nReturn information about the given odex address.\n"
             "\nArguments:\n"
-            "1. \"bulwarkaddress\"     (string, required) The bulwark address to validate\n"
+            "1. \"odexaddress\"     (string, required) The odex address to validate\n"
             "\nResult:\n"
             "{\n"
             "  \"isvalid\" : true|false,         (boolean) If the address is valid or not. If not, this is the only property returned.\n"
-            "  \"address\" : \"bulwarkaddress\", (string) The bulwark address validated\n"
+            "  \"address\" : \"odexaddress\", (string) The odex address validated\n"
             "  \"ismine\" : true|false,          (boolean) If the address is yours or not\n"
             "  \"isscript\" : true|false,        (boolean) If the key is a script\n"
             "  \"pubkey\" : \"publickeyhex\",    (string) The hex value of the raw public key\n"
@@ -363,7 +363,7 @@ CScript _createmultisig_redeemScript(const UniValue& params)
     for (unsigned int i = 0; i < keys.size(); i++) {
         const std::string& ks = keys[i].get_str();
 #ifdef ENABLE_WALLET
-        // Case 1: Bulwark address and we have full public key:
+        // Case 1: Odex address and we have full public key:
         CBitcoinAddress address(ks);
         if (pwalletMain && address.IsValid()) {
             CKeyID keyID;
@@ -409,9 +409,9 @@ UniValue createmultisig(const UniValue& params, bool fHelp)
 
                      "\nArguments:\n"
                      "1. nrequired      (numeric, required) The number of required signatures out of the n keys or addresses.\n"
-                     "2. \"keys\"       (string, required) A json array of keys which are bulwark addresses or hex-encoded public keys\n"
+                     "2. \"keys\"       (string, required) A json array of keys which are odex addresses or hex-encoded public keys\n"
                      "     [\n"
-                     "       \"key\"    (string) bulwark address or hex-encoded public key\n"
+                     "       \"key\"    (string) odex address or hex-encoded public key\n"
                      "       ,...\n"
                      "     ]\n"
 
@@ -444,10 +444,10 @@ UniValue verifymessage(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 3)
         throw runtime_error(
-            "verifymessage \"bulwarkaddress\" \"signature\" \"message\"\n"
+            "verifymessage \"odexaddress\" \"signature\" \"message\"\n"
             "\nVerify a signed message\n"
             "\nArguments:\n"
-            "1. \"bulwarkaddress\"  (string, required) The bulwark address to use for the signature.\n"
+            "1. \"odexaddress\"  (string, required) The odex address to use for the signature.\n"
             "2. \"signature\"       (string, required) The signature provided by the signer in base 64 encoding (see signmessage).\n"
             "3. \"message\"         (string, required) The message that was signed.\n"
             "\nResult:\n"

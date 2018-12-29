@@ -4,7 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifdef HAVE_CONFIG_H
-#include "config/bulwark-config.h"
+#include "config/odex-config.h"
 #endif
 
 #include "netbase.h"

@@ -68,7 +68,7 @@
              <item row="6" column="0">
               <widget class="QLabel" name="label_3">
                <property name="toolTip">
-                <string>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bulwark network.</string>
+                <string>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Odex network.</string>
                </property>
                <property name="text">
                 <string>Message:</string>
@@ -91,7 +91,7 @@
              <item row="6" column="2">
               <widget class="QLineEdit" name="reqMessage">
                <property name="toolTip">
-                <string>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Bulwark network.</string>
+                <string>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Odex network.</string>
                </property>
               </widget>
              </item>
@@ -168,7 +168,7 @@
                   <string>Request payment</string>
                  </property>
                  <property name="icon" stdset="0">
-                  <iconset resource="../bulwark.qrc">
+                  <iconset resource="../odex.qrc">
                    <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
                  </property>
                 </widget>
@@ -188,7 +188,7 @@
                   <string>Clear</string>
                  </property>
                  <property name="icon" stdset="0">
-                  <iconset resource="../bulwark.qrc">
+                  <iconset resource="../odex.qrc">
                    <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
                  </property>
                  <property name="autoDefault" stdset="0">
@@ -321,7 +321,7 @@
                 <string>Show</string>
                </property>
                <property name="icon" stdset="0">
-                <iconset resource="../bulwark.qrc">
+                <iconset resource="../odex.qrc">
                  <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
                </property>
                <property name="autoDefault" stdset="0">
@@ -341,7 +341,7 @@
                 <string>Remove</string>
                </property>
                <property name="icon" stdset="0">
-                <iconset resource="../bulwark.qrc">
+                <iconset resource="../odex.qrc">
                  <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
                </property>
                <property name="autoDefault" stdset="0">
@@ -399,7 +399,7 @@
   <tabstop>removeRequestButton</tabstop>
  </tabstops>
  <resources>
-  <include location="../bulwark.qrc"/>
+  <include location="../odex.qrc"/>
  </resources>
  <connections/>
 </ui>

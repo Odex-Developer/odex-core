@@ -21,7 +21,7 @@ As a <user|developer|...>, I want to <task> so that <goal>.
 ### Reproduction
 [comment]: # (Describe how we can replicate the bug step by step.)
 
-- Open Bulwark
+- Open Odex
 - ...
 - Step 3, etc.
 
@@ -34,7 +34,7 @@ As a <user|developer|...>, I want to <task> so that <goal>.
 
 ### Additional Information
 [comment]: # (Please do your best to fill this out.)
-* Bulwark version: ...
+* Odex version: ...
 [comment]: # (Windows, MacOS or Linux.)
 * Operating System: <Windows|macOS|Linux>
 

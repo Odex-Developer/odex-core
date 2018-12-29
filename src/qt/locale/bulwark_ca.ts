@@ -164,8 +164,8 @@
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES BWKS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ODEXS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -354,12 +354,12 @@
         <translation>Ajuda</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>Sobre Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>Sobre Odex Core</translation>
     </message>
     <message>
         <source>BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>Sobre Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>Sobre Odex Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Bulwark Core.</source>
-        <translation>Benvingut a Bulwark Core.</translation>
+        <source>Welcome to Odex Core.</source>
+        <translation>Benvingut a Odex Core.</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1147,8 +1147,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1307,10 +1307,10 @@
     </message>
     </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

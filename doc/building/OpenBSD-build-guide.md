@@ -2,7 +2,7 @@
 
 (updated for OpenBSD 6.3)
 
-This guide describes how to build Bulwarkd and command-line utilities on OpenBSD.
+This guide describes how to build Odexd and command-line utilities on OpenBSD.
 
 OpenBSD is most commonly used as a server OS, so this guide does not contain instructions for building the GUI.
 
@@ -16,7 +16,7 @@ pkg_add autoconf # (select highest version, e.g. 2.69)
 pkg_add automake # (select highest version, e.g. 1.15)
 pkg_add python # (select highest version, e.g. 3.6)
 
-git clone https://github.com/bulwark-coin/Bulwark.git
+git clone https://github.com/odex-coin/Odex.git
 ```
 
 **Important**: From OpenBSD 6.2 onwards a C++11-supporting clang compiler is
@@ -45,7 +45,7 @@ from the root of the repository. Then set `BDB_PREFIX` for the next section:
 export BDB_PREFIX="$PWD/db4"
 ```
 
-## Building Bulwark Core
+## Building Odex Core
 
 **Important**: use `gmake`, not `make`. The non-GNU `make` will exit with a horrible error.
 
@@ -95,7 +95,7 @@ The standard ulimit restrictions in OpenBSD are very strict:
     data(kbytes)         1572864
 
 This, unfortunately, in some cases not enough to compile some `.cpp` files in the project,
-(see issue [#6658](https://github.com/Bulwark/Bulwark/issues/6658)).
+(see issue [#6658](https://github.com/Odex/Odex/issues/6658)).
 If your user is in the `staff` group the limit can be raised with:
 
     ulimit -d 3000000

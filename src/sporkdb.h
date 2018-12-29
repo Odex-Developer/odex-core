@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BULWARK_CSPORKDB_H
-#define BULWARK_CSPORKDB_H
+#ifndef ODEX_CSPORKDB_H
+#define ODEX_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //BULWARK_CSPORKDB_H
+#endif //ODEX_CSPORKDB_H

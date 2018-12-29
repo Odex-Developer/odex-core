@@ -1,12 +1,12 @@
-![Bulwark Logo](https://bulwarkcrypto.com/wp-content/uploads/2018/10/Symbol-Color2.svg)
+![Odex Logo](https://odexcrypto.com/wp-content/uploads/2018/10/Symbol-Color2.svg)
 
-Bulwark Cryptocurrency
+Odex Cryptocurrency
 &middot;
-[![GitHub license](https://img.shields.io/github/license/bulwark-crypto/Bulwark.svg)](https://github.com/bulwark-crypto/Bulwark/blob/master/COPYING) [![GitHub version](https://badge.fury.io/gh/bulwark-crypto%2FBulwark.svg)](https://badge.fury.io/gh/bulwark-crypto%2FBulwark) [![Discord](https://img.shields.io/discord/374271866308919296.svg)](https://discord.me/bulwarkcrypto)
+[![GitHub license](https://img.shields.io/github/license/odex-crypto/Odex.svg)](https://github.com/odex-crypto/Odex/blob/master/COPYING) [![GitHub version](https://badge.fury.io/gh/odex-crypto%2FOdex.svg)](https://badge.fury.io/gh/odex-crypto%2FOdex) [![Discord](https://img.shields.io/discord/374271866308919296.svg)](https://discord.me/odexcrypto)
 =====
 
-Bulwark (BWK) is a privacy oriented digital currency with Masternodes implemented.
-Bulwark offers both SwiftTX and Obfuscation to enable speedy transactions with a Seesaw Staking / Masternode reward balancing mechanism to promote strong network security after the Proof of Work phase
+Odex (ODEX) is a privacy oriented digital currency with Masternodes implemented.
+Odex offers both SwiftTX and Obfuscation to enable speedy transactions with a Seesaw Staking / Masternode reward balancing mechanism to promote strong network security after the Proof of Work phase
 
 ## Table of Contents
 - [Specifications](#specifications)
@@ -18,7 +18,7 @@ Bulwark offers both SwiftTX and Obfuscation to enable speedy transactions with a
 
 | Specification         | Descriptor                              |
 |-----------------------|-----------------------------------------|
-| Ticker                | BWK                                     |
+| Ticker                | ODEX                                     |
 | Algorithm             | NIST5                                   |
 | RPC Port              | 52541                                   |
 | P2P Port              | 52543                                   |
@@ -27,9 +27,9 @@ Bulwark offers both SwiftTX and Obfuscation to enable speedy transactions with a
 | Block Size            | 1MB                                     |
 | Mined/Minted Maturity | 67 Blocks (~100 Minutes)                |
 | Confirmation          | 6 Blocks (~9 Minutes)                   |
-| Circulation (1 Year)  | 14,505,720 BWK                          |
-| Circulation (5 Years) | 27,668,220 BWK                          |
-| Governance Funds (Max)| 1,388,250 BWK                          |
+| Circulation (1 Year)  | 14,505,720 ODEX                          |
+| Circulation (5 Years) | 27,668,220 ODEX                          |
+| Governance Funds (Max)| 1,388,250 ODEX                          |
 | PoW Period            | nHeight ≤ 182,700                       |
 | PoS Period            | nHeight ≥ 182,701                       |
 | Protocol Support      | IPV4, IPV6, TOR, I2P                    |
@@ -41,7 +41,7 @@ Bulwark offers both SwiftTX and Obfuscation to enable speedy transactions with a
 | Requirement   | Details              |
 |---------------|----------------------|
 | Confirmations | 475 Blocks           |
-| Amount        | 100 BWK (Per Input)  |
+| Amount        | 100 ODEX (Per Input)  |
 | Wallet        | Unlocked for Staking |
 
 <a name="pos-block-rewards"></a>

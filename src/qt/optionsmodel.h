@@ -46,7 +46,7 @@ public:
 		ShowOrphans,         // bool
         ZeromintPercentage,  // int
         ZeromintPrefDenom,   // int
-        AnonymizeBulwarkAmount, //int
+        AnonymizeOdexAmount, //int
         ShowMasternodesTab,  // bool
         Listen,              // bool
         OptionIDRowCount,
@@ -94,7 +94,7 @@ signals:
     void displayUnitChanged(int unit);
     void zeromintPercentageChanged(int);
     void preferredDenomChanged(int);
-    void anonymizeBulwarkAmountChanged(int);
+    void anonymizeOdexAmountChanged(int);
     void coinControlFeaturesChanged(bool);
 };
 

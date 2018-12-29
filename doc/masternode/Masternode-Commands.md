@@ -1,48 +1,48 @@
 # Masternode Commands
 
-`systemctl start bulwarkd`
-\- Starts the Bulwark Daemon
+`systemctl start odexd`
+\- Starts the Odex Daemon
 
-`systemctl stop bulwarkd`
-\- Stops the Bulwark Daemon
+`systemctl stop odexd`
+\- Stops the Odex Daemon
 
-`systemctl restart bulwarkd`
-\- Restarts the Bulwark Daemon
+`systemctl restart odexd`
+\- Restarts the Odex Daemon
 
-`systemctl status bulwarkd`
-\- Displays the status of the Bulwark Daemon
+`systemctl status odexd`
+\- Displays the status of the Odex Daemon
 
-`bulwark-cli masternode status`
-\- Displays the status of the Bulwark masternode running on the VPS
+`odex-cli masternode status`
+\- Displays the status of the Odex masternode running on the VPS
 
-`bulwark-cli getinfo`
+`odex-cli getinfo`
 \- Displays general info about the masternode
 
-`bulwark-cli masternodecurrent`
+`odex-cli masternodecurrent`
 \- Displays additional info about the masternode
 
-`ps aux | grep bulwark`
-\- Shows if the bulwarkd process is running
+`ps aux | grep odex`
+\- Shows if the odexd process is running
 
 `dmesg | egrep -i 'killed process'`
-\- Lets you know whether bulwarkd was killed due to lack of memory
+\- Lets you know whether odexd was killed due to lack of memory
 
-`nano ~/.bulwark/bulwark.conf`
-\- Edits your bulwark.conf file
+`nano ~/.odex/odex.conf`
+\- Edits your odex.conf file
 
-`killall -9 bulwarkd`
-\- Force quits bulwarkd (*USE WITH CAUTION*)
+`killall -9 odexd`
+\- Force quits odexd (*USE WITH CAUTION*)
 
-`bulwark-cli getpeerinfo | grep synced_headers`
+`odex-cli getpeerinfo | grep synced_headers`
 \- Displays synced headers
 
-`bulwark-cli getmasternodecount`
+`odex-cli getmasternodecount`
 \- Displays count of all masternodes
 
-`bash <( curl https://raw.githubusercontent.com/bulwark-crypto/Bulwark-MN-Install/master/refresh_node.sh )`
+`bash <( curl https://raw.githubusercontent.com/odex-crypto/Odex-MN-Install/master/refresh_node.sh )`
 
 Refreshes your node by clearing the chaindata
 
-`bash <( curl https://raw.githubusercontent.com/bulwark-crypto/Bulwark-MN-Install/master/update_node.sh )`
+`bash <( curl https://raw.githubusercontent.com/odex-crypto/Odex-MN-Install/master/update_node.sh )`
 
 Updates your node to the newest version

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bulwark"
-            VALUE "FileDescription",    "Bulwark-cli (OSS RPC client for Bulwark)"
+            VALUE "CompanyName",        "Odex"
+            VALUE "FileDescription",    "Odex-cli (OSS RPC client for Odex)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "bulwark-cli"
+            VALUE "InternalName",       "odex-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "bulwark-cli.exe"
-            VALUE "ProductName",        "Bulwark-cli"
+            VALUE "OriginalFilename",   "odex-cli.exe"
+            VALUE "ProductName",        "Odex-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

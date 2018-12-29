@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: bulwarkd.service
-Upstart: bulwarkd.conf
-OpenRC:  bulwarkd.openrc
-         bulwarkd.openrcconf
-CentOS:  bulwarkd.init
+SystemD: odexd.service
+Upstart: odexd.conf
+OpenRC:  odexd.openrc
+         odexd.openrcconf
+CentOS:  odexd.init
 
 have been made available to assist packagers in creating node packages here.
 

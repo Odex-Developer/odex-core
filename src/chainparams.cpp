@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Bulwark developers
+// Copyright (c) 2017-2018 The Odex developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -120,12 +120,12 @@ public:
         pchMessageStart[3] = 0x17;
 	    vAlertPubKey = ParseHex("04579f18934b3ef39094a9999e45506a1935662d0cd4e504d07beb53b8a1bfd78d81bee47e65119318397809420d5320e3c7b2aaae58580db48c38a4e6d4f0f919");
         nDefaultPort = 52543;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // Bulwark starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // Odex starting difficulty is 1 / 2^12
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 90; // Bulwark: 1.5 minutes
-        nTargetSpacingSlowLaunch = 5 * 90;  // Bulwark: 7.5 minutes (Slow launch - Block 300)
-	    nTargetSpacing = 1 * 90; // Bulwark: 1.5min after block 300
+        nTargetTimespan = 1 * 90; // Odex: 1.5 minutes
+        nTargetSpacingSlowLaunch = 5 * 90;  // Odex: 7.5 minutes (Slow launch - Block 300)
+	    nTargetSpacing = 1 * 90; // Odex: 1.5min after block 300
         nLastPOWBlock = 182700; 
         nLastPOWBlockOld = 345600; // 1 year
 		nLastSeeSawBlock = 200000; // last block for seesaw rewards
@@ -168,17 +168,17 @@ public:
         assert(hashGenesisBlock == uint256("0x0000068e7ab8e264f6759d2d81b29e8b917c10b04db47a9a0bb3cba3fba5d574"));
 	    assert(genesis.hashMerkleRoot == uint256("0x77976d6bd593c84063ac3937525bc15e25188d96871b13d4451ffc382999f64f"));
 
-        vSeeds.push_back(CDNSSeedData("bwkseed.mempool.pw", "bwkseed.mempool.pw"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed1.bulwarkcrypto.com", "bwkseed1.bulwarkcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed2.bulwarkcrypto.com", "bwkseed2.bulwarkcrypto.com")); 	 // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed3.bulwarkcrypto.com", "bwkseed3.bulwarkcrypto.com"));      // Single node address
-	    vSeeds.push_back(CDNSSeedData("bwkseed4.bulwarkcrypto.com", "bwkseed4.bulwarkcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed5.bulwarkcrypto.com", "bwkseed5.bulwarkcrypto.com"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed1.bulwarkcrypto.site", "bwkseed1.bulwarkcrypto.site"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed2.bulwarkcrypto.site", "bwkseed2.bulwarkcrypto.site")); 	 // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed3.bulwarkcrypto.site", "bwkseed3.bulwarkcrypto.site"));      // Single node address
-	    vSeeds.push_back(CDNSSeedData("bwkseed4.bulwarkcrypto.site", "bwkseed4.bulwarkcrypto.site"));      // Single node address
-        vSeeds.push_back(CDNSSeedData("bwkseed5.bulwarkcrypto.site", "bwkseed5.bulwarkcrypto.site"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed.mempool.pw", "odexseed.mempool.pw"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed1.odexcrypto.com", "odexseed1.odexcrypto.com"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed2.odexcrypto.com", "odexseed2.odexcrypto.com")); 	 // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed3.odexcrypto.com", "odexseed3.odexcrypto.com"));      // Single node address
+	    vSeeds.push_back(CDNSSeedData("odexseed4.odexcrypto.com", "odexseed4.odexcrypto.com"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed5.odexcrypto.com", "odexseed5.odexcrypto.com"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed1.odexcrypto.site", "odexseed1.odexcrypto.site"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed2.odexcrypto.site", "odexseed2.odexcrypto.site")); 	 // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed3.odexcrypto.site", "odexseed3.odexcrypto.site"));      // Single node address
+	    vSeeds.push_back(CDNSSeedData("odexseed4.odexcrypto.site", "odexseed4.odexcrypto.site"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("odexseed5.odexcrypto.site", "odexseed5.odexcrypto.site"));      // Single node address
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 85); // b
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18); 
@@ -283,14 +283,14 @@ public:
         //vSeeds.push_back(CDNSSeedData("testnet02.mempool.pw", "testnet02.mempool.pw"));
         //vSeeds.push_back(CDNSSeedData("testnet03.mempool.pw", "testnet03.mempool.pw"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // Testnet bulwark addresses start with 'T'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet bulwark script addresses start with '5' or '6'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 65); // Testnet odex addresses start with 'T'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 12);  // Testnet odex script addresses start with '5' or '6'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet bulwark BIP32 pubkeys start with 'DRKV'
+        // Testnet odex BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet bulwark BIP32 prvkeys start with 'DRKP'
+        // Testnet odex BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet bulwark BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet odex BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x01)(0x00)(0x00)(0x80).convert_to_container<std::vector<unsigned char> >();
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
@@ -336,8 +336,8 @@ public:
         pchMessageStart[2] = 0x7e;
         pchMessageStart[3] = 0xac;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // Bulwark: 1 day
-        nTargetSpacing = 1 * 60;        // Bulwark: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // Odex: 1 day
+        nTargetSpacing = 1 * 60;        // Odex: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

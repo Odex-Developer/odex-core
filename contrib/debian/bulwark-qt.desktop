@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Bulwark
-Comment=Bulwark P2P Cryptocurrency
-Comment[fr]=Bulwark, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bulwark, eşten eşe kriptografik sanal para birimi
-Exec=bulwark-qt %u
+Name=Odex
+Comment=Odex P2P Cryptocurrency
+Comment[fr]=Odex, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Odex, eşten eşe kriptografik sanal para birimi
+Exec=odex-qt %u
 Terminal=false
 Type=Application
-Icon=bulwark128
-MimeType=x-scheme-handler/bulwark;
+Icon=odex128
+MimeType=x-scheme-handler/odex;
 Categories=Office;Finance;

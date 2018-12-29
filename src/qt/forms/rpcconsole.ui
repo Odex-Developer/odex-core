@@ -354,7 +354,7 @@
        <item row="16" column="0">
         <widget class="QtMaterialFlatButton" name="openDebugLogfileButton" native="true">
          <property name="toolTip">
-          <string>Open the BWK debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the ODEX debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text" stdset="0">
           <string>Open</string>
@@ -1455,7 +1455,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../bulwark.qrc"/>
+  <include location="../odex.qrc"/>
  </resources>
  <connections/>
 </ui>

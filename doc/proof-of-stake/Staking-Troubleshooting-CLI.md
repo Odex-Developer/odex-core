@@ -5,7 +5,7 @@
 
 To make sure your wallet is staking, the 1st step is to use the following command:
 
-`bulwark-cli getstakingstatus`
+`odex-cli getstakingstatus`
 
 This should hopefully look like this:
 
@@ -36,17 +36,17 @@ This should always be true, this just shows that the POS period is active for th
 
 This makes sure you have valid peers, if this is showing as false I'd recommend the following command:
 
-`rm -Rf ~/.bulwark/peers.dat`
+`rm -Rf ~/.odex/peers.dat`
 
 and then running:
 
-`systemctl restart bulwarkd`
+`systemctl restart odexd`
 
 ## walletunlocked
 
 This means your wallet isn't unlocked, just run the command below:
 
-`bulwark-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
+`odex-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
 
 This will unlock your wallet for staking only for a long time period. Unlocking for staking only means your funds are safe even if a malicious entity got access to your VPS.
 
@@ -56,50 +56,50 @@ This is asking if your transaction is old enough to be staked. It takes 475 conf
 
 ## enoughcoins
 
-This is making sure you have more than 1 BWK in the wallet. If this is appearing false there are a wide number of potential problems. It's best to come ask us in [Discord](https://discord.me/bulwarkcrypto) or [Telegram](https://t.me/bulwarkcrypto) if you have issues with this.
+This is making sure you have more than 1 ODEX in the wallet. If this is appearing false there are a wide number of potential problems. It's best to come ask us in [Discord](https://discord.me/odexcrypto) or [Telegram](https://t.me/odexcrypto) if you have issues with this.
 
 ## mnsync
 
 This just makes sure your wallet is fully synced, if you appear to be fully synced I'd recommend typing:
 
-`bulwark-cli mnsync reset`
+`odex-cli mnsync reset`
 
 and then closing the wallet with
 
-`systemctl stop bulwarkd`
+`systemctl stop odexd`
 
 After this, wait a minute, then open it again with:
 
-`systemctl start bulwarkd`
+`systemctl start odexd`
 
 then wait 10 minutes more, before unlocking the wallet with the command:
 
-`bulwark-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
+`odex-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
 
 On a local wallet, try restarting it, if that doesn't help, resync your chain.
 
 ## staking status
 
-Staking status should be true, when staking=1 in your bulwark.conf, and when all other options are also true.
+Staking status should be true, when staking=1 in your odex.conf, and when all other options are also true.
 
 If you find yourself in a situation where this is false while all other indicators are true, type the below:
 
-`cat ~/.bulwark/bulwark.conf`
+`cat ~/.odex/odex.conf`
 
 and confirm the output from this command includes "staking=1".
 
 If it does, follow the below steps:
 
-`systemctl stop bulwarkd`
+`systemctl stop odexd`
 
 After this, wait a minute, then open it again with:
 
-`systemctl start bulwarkd`
+`systemctl start odexd`
 
 then wait 10 minutes more, before unlocking the wallet with the command:
 
-`bulwark-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
+`odex-cli walletpassphrase '<YOUR PASSWORD>' 99999999 true`
 
 Then, after a few more minutes of the network accepting your stakes, you should find everything to be true when you run
 
-`bulwark-cli getstakingstatus`
+`odex-cli getstakingstatus`

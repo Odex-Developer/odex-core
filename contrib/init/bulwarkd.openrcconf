@@ -1,25 +1,25 @@
-# /etc/conf.d/bulwarkd: config file for /etc/init.d/bulwarkd
+# /etc/conf.d/odexd: config file for /etc/init.d/odexd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/bulwark/bulwark.conf"
+#BITCOIND_CONFIGFILE="/etc/odex/odex.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/bulwarkd"
+#BITCOIND_PIDDIR="/var/run/odexd"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bulwarkd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/odexd.pid"
 
-# Where to write bulwarkd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/bulwarkd"
+# Where to write odexd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/odexd"
 
-# User and group to own bulwarkd process
-#BITCOIND_USER="bulwark"
-#BITCOIND_GROUP="bulwark"
+# User and group to own odexd process
+#BITCOIND_USER="odex"
+#BITCOIND_GROUP="odex"
 
-# Path to bulwarkd executable
-#BITCOIND_BIN="/usr/bin/bulwarkd"
+# Path to odexd executable
+#BITCOIND_BIN="/usr/bin/odexd"
 
-# Nice value to run bulwarkd under
+# Nice value to run odexd under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

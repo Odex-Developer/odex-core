@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Bulwarkadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
+        <source>These are your Odex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Odexadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Bulwarkadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your Odex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw Odexadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>Bulwark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BWKs from being stolen by malware infecting your computer.</source>
-        <translation>Bulwark zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw BWKs stelen.</translation>
+        <source>Odex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ODEXs from being stolen by malware infecting your computer.</source>
+        <translation>Odex zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ODEXs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Weet u zeker dat u uw portemonnee wilt versleutelen?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW BWK VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW ODEX VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a Bulwark Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een Bulwark adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a Odex Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een Odex adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>Het Bulwark adres om het bericht met te ondertekenen</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>Het Odex adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Bulwark adres bezit</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Odex adres bezit</translation>
     </message>
     <message>
         <source>Encrypt Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>Het Bulwark adres waarmee het bericht was ondertekend</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>Het Odex adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Bulwark adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Odex adres</translation>
     </message>
     <message>
         <source>Decrypt Key</source>
@@ -598,16 +598,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Kern</translation>
+        <source>Odex Core</source>
+        <translation>Odex Kern</translation>
     </message>
     <message>
-        <source>Send coins to a Bulwark address</source>
-        <translation>Verstuur munten naar een Bulwark adres</translation>
+        <source>Send coins to a Odex address</source>
+        <translation>Verstuur munten naar een Odex adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bulwark: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en Bulwark: URI's)</translation>
+        <source>Request payments (generates QR codes and odex: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en Odex: URI's)</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>Over Bulwark Kern</translation>
+        <source>About Odex Core</source>
+        <translation>Over Odex Kern</translation>
     </message>
     <message>
-        <source>Show information about Bulwark Core</source>
-        <translation>Toon informatie over Bulwark Kern</translation>
+        <source>Show information about Odex Core</source>
+        <translation>Toon informatie over Odex Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bulwark</source>
-        <translation>Wijzig Bulwark configuratie opties</translation>
+        <source>Modify configuration options for Odex</source>
+        <translation>Wijzig Odex configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your Bulwark addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Bulwark adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Odex addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Odex adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bulwark addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Bulwark adressen</translation>
+        <source>Verify messages to ensure they were signed with specified Odex addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde Odex adressen</translation>
     </message>
     <message>
         <source>BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a Bulwark: URI or payment request</source>
-        <translation>Open een Bulwark: URI of betaalverzoek</translation>
+        <source>Open a Odex: URI or payment request</source>
+        <translation>Open een Odex: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>Bulwark Core client</source>
-        <translation>Bulwark Core client</translation>
+        <source>Odex Core client</source>
+        <translation>Odex Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bulwark network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het Bulwark netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Bulwark netwerk</numerusform></translation>
+        <source>%n active connection(s) to Odex network</source>
+        <translation><numerusform>%n actieve verbinding(en) naar het Odex netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het Odex netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -829,8 +829,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bulwark.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (bulwark.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (odex.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (odex.conf).</translation>
     </message>
 </context>
 <context>
@@ -1046,8 +1046,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bulwark address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig Bulwark adres.</translation>
+        <source>The entered address "%1" is not a valid Odex address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig Odex adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1076,16 +1076,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Kern</translation>
+        <source>Odex Core</source>
+        <translation>Odex Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>Over Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>Over Odex Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1096,8 +1096,8 @@ MultiSend: %1</translation>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>Over Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>Over Odex Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1127,16 +1127,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to Bulwark Core.</source>
-        <translation>Welkom bij Bulwark Core</translation>
+        <source>Welcome to Odex Core.</source>
+        <translation>Welkom bij Odex Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Kern</translation>
+        <source>Odex Core</source>
+        <translation>Odex Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1352,20 +1352,20 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Bulwark after logging in to the system.</source>
-        <translation>Bulwark automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start Odex after logging in to the system.</source>
+        <translation>Odex automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>Start Bulwark on system login</source>
-        <translation>Bulwark starten bij systeemlogin</translation>
+        <source>Start Odex on system login</source>
+        <translation>Odex starten bij systeemlogin</translation>
     </message>
     <message>
         <source>Network</source>
         <translation>Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bulwark.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Bulwark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Odex.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van Odex.</translation>
     </message>
     <message>
         <source>Map port using UPnP</source>
@@ -1516,16 +1516,16 @@ MultiSend: %1</translation>
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Enter an amount of BWK to convert to zBWK</source>
-        <translation>Vul de hoeveleheid in om BWK te converteren naar zBWK</translation>
+        <source>Enter an amount of ODEX to convert to zODEX</source>
+        <translation>Vul de hoeveleheid in om ODEX te converteren naar zODEX</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zBWK</source>
-        <translation>zBWK</translation>
+        <source>zODEX</source>
+        <translation>zODEX</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1635,8 +1635,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a Bulwark address (e.g. %1)</source>
-        <translation>Voer een Bulwark adres in (b.v. %1)</translation>
+        <source>Enter a Odex address (e.g. %1)</source>
+        <translation>Voer een Odex adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1837,8 +1837,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the Bulwark RPC console.</source>
-        <translation>Welkom bij de Bulwark RPC console.</translation>
+        <source>Welcome to the Odex RPC console.</source>
+        <translation>Welkom bij de Odex RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2045,8 +2045,8 @@ MultiSend: %1</translation>
         <translation>Wijzig:</translation>
     </message>
     <message>
-        <source>0 BWK</source>
-        <translation>0 BWK</translation>
+        <source>0 ODEX</source>
+        <translation>0 ODEX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2137,8 +2137,8 @@ MultiSend: %1</translation>
         <translation>anonieme financiën</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bulwark address</source>
-        <translation>Waarschuwing: Ongeldig Bulwark adres</translation>
+        <source>Warning: Invalid Odex address</source>
+        <translation>Waarschuwing: Ongeldig Odex adres</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2192,8 +2192,8 @@ MultiSend: %1</translation>
         <translation>Betaal Naar:</translation>
     </message>
     <message>
-        <source>The Bulwark address to send the payment to</source>
-        <translation>Het Bulwark adres om de betaling naar te verzenden</translation>
+        <source>The Odex address to send the payment to</source>
+        <translation>Het Odex adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2247,8 +2247,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bulwark Core is shutting down...</source>
-        <translation>Bulwark Core is aan het afsluiten...</translation>
+        <source>Odex Core is shutting down...</source>
+        <translation>Odex Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2266,8 +2266,8 @@ MultiSend: %1</translation>
         <translation>Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>Het Bulwark adres om het bericht met te ondertekenen</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>Het Odex adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2298,16 +2298,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het Bulwark adres bezit</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het Odex adres bezit</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>Het Bulwark adres waarmee het bericht was ondertekend</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>Het Odex adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Bulwark adres</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde Odex adres</translation>
     </message>
     <message>
         <source>Sign Message</source>
@@ -2377,8 +2377,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Kern</translation>
+        <source>Odex Core</source>
+        <translation>Odex Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2393,8 +2393,8 @@ MultiSend: %1</translation>
         <translation>De Dash Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The Bulwark Core developers</source>
-        <translation>De Bulwark Core ontwikkelaars</translation>
+        <source>The Odex Core developers</source>
+        <translation>De Odex Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2753,10 +2753,10 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     <message>
-        <source>Select zBWK to Spend</source>
-        <translation>Selecteer zBWK om te spenderen</translation>
+        <source>Select zODEX to Spend</source>
+        <translation>Selecteer zODEX om te spenderen</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -2767,8 +2767,8 @@ MultiSend: %1</translation>
         <translation>0</translation>
     </message>
     <message>
-        <source>zBWK</source>
-        <translation>zBWK</translation>
+        <source>zODEX</source>
+        <translation>zODEX</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -2780,7 +2780,7 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(standaard: %s)</translation>
@@ -2802,12 +2802,12 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2014-%i The Dash Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Bulwark Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Bulwark Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2015-%i The Odex Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Odex Core Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The Bulwark Core Developers</source>
-        <translation>Copyright (C) 2017-%i The Bulwark Core Ontwikkelaars</translation>
+        <source>Copyright (C) 2017-%i The Odex Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Odex Core Ontwikkelaars</translation>
     </message>
     <message>
         <source>(default: %s)</source>

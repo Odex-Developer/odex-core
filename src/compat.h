@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bulwark-config.h"
+#include "config/odex-config.h"
 #endif
 
 #ifdef WIN32
@@ -72,13 +72,13 @@ typedef u_int SOCKET;
 #define MAX_PATH 1024
 #endif
 
-// As Bulwark does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
+// As Odex does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
 #if !defined(HAVE_MSG_NOSIGNAL) && !defined(MSG_NOSIGNAL)
 #define MSG_NOSIGNAL 0
 #endif
 
 #ifndef WIN32
-// PRIO_MAX is not defined on Bulwark
+// PRIO_MAX is not defined on Odex
 #ifndef PRIO_MAX
 #define PRIO_MAX 20
 #endif

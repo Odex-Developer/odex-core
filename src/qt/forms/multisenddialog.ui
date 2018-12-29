@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Add a Bulwark Adresses at the bottom and configure the Multisend settings for each of them</string>
+    <string>Add a Odex Adresses at the bottom and configure the Multisend settings for each of them</string>
    </property>
   </widget>
   <widget class="QScrollArea" name="addAddressScrollArea">
@@ -235,7 +235,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../bulwark.qrc">
+         <iconset resource="../odex.qrc">
           <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
         </property>
         <property name="autoDefault">
@@ -325,7 +325,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../bulwark.qrc"/>
+  <include location="../odex.qrc"/>
  </resources>
  <connections/>
 </ui>

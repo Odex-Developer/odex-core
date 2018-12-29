@@ -1,21 +1,21 @@
-# Running Bulwark
+# Running Odex
 
-There are two variations of the bulwark program available; one with a graphical user interface (usually referred to as just bulwark), and a 'headless' version (called [They are completely compatible with each other, and take the same command-line arguments, read the same configuration file, and read and write the same data files. You can run one copy of either bulwark or bulwarkd on your system at a time (if you accidentally try to launch another, the copy will let you know that bulwark or bulwarkd is already running and will exit).
+There are two variations of the odex program available; one with a graphical user interface (usually referred to as just odex), and a 'headless' version (called [They are completely compatible with each other, and take the same command-line arguments, read the same configuration file, and read and write the same data files. You can run one copy of either odex or odexd on your system at a time (if you accidentally try to launch another, the copy will let you know that odex or odexd is already running and will exit).
 
 
 # Linux Quickstart
 
-The simplest way to start from scratch with the command line client, automatically syncing blockchain and creating a wallet, is to just run this command (without arguments) from the directory containing your bulwarkd binary:
+The simplest way to start from scratch with the command line client, automatically syncing blockchain and creating a wallet, is to just run this command (without arguments) from the directory containing your odexd binary:
 
-  ./bulwarkd
+  ./odexd
 
 To run with the standard GUI interface:
 
-  ./bulwark-qt
+  ./odex-qt
 
 # Command-line arguments
 
-These commands are accurate as of bulwark Core version '''v2.0.0'''.
+These commands are accurate as of odex Core version '''v2.0.0'''.
 
 <table>
 <tbody><tr>
@@ -103,7 +103,7 @@ How many blocks to check at startup (default: 500, 0 = all)
 -conf=&lt;file&gt;
 </td>
 <td>
-Specify configuration file (default: bulwark.conf)
+Specify configuration file (default: odex.conf)
 </td>
 </tr>
 <tr>
@@ -180,7 +180,7 @@ Set the number of script verification threads (-8 to 16, 0 = auto, &lt;0 = leave
 -pid=&lt;file&gt;
 </td>
 <td>
-Specify pid file (default: bulwarkd.pid)
+Specify pid file (default: odexd.pid)
 </td>
 </tr>
 <tr>
@@ -213,7 +213,7 @@ Reindex the accumulator database on startup
 -reindexmoneysupply
 </td>
 <td>
-Reindex the BWK and zBWK money supply statistics on startup
+Reindex the ODEX and zODEX money supply statistics on startup
 </td>
 </tr>
 <tr>
@@ -626,7 +626,7 @@ Set key pool size to &lt;n&gt;&lt;/n&gt; (default: 1000)
 -paytxfee=&lt;amt&gt;
 </td>
 <td>
-Fee (in BWK/kB) to add to transactions you send (default: 0.0001)
+Fee (in ODEX/kB) to add to transactions you send (default: 0.0001)
 </td>
 </tr>
 <tr>
@@ -841,7 +841,7 @@ Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;
 -debug=&lt;category&gt;
 </td>
 <td>
-Output debugging information (default: 0, supplying &lt;category&gt; is optional). If &lt;category&gt; is not supplied, output all debugging information.&lt;category&gt; can be: addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, bulwark, (obfuscation, swiftx, masternode, mnpayments, mnbudget, zero), qt.
+Output debugging information (default: 0, supplying &lt;category&gt; is optional). If &lt;category&gt; is not supplied, output all debugging information.&lt;category&gt; can be: addrman, alert, bench, coindb, db, lock, rand, rpc, selectcoins, tor, mempool, net, proxy, odex, (obfuscation, swiftx, masternode, mnpayments, mnbudget, zero), qt.
 </td>
 </tr>
 <tr>
@@ -907,7 +907,7 @@ Prepend debug output with timestamp (default: 1)
 -minrelaytxfee=&lt;amt&gt;
 </td>
 <td>
-Fees (in BWK/Kb) smaller than this are considered zero fee for relaying (default: 0.0001)
+Fees (in ODEX/Kb) smaller than this are considered zero fee for relaying (default: 0.0001)
 </td>
 </tr>
 <tr>
@@ -951,7 +951,7 @@ Use the test network
 -litemode=&lt;n&gt;
 </td>
 <td>
-Disable all Bulwark specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: 0)
+Disable all Odex specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: 0)
 </td>
 </tr>
 <tr><td colspan="3">
@@ -1298,13 +1298,13 @@ Show splash screen on startup (default: 1)
 
 Many of the boolean options can also be set to off by specifying them with a "no" prefix: e.g. -nodnseed.
 
-# bulwark.conf Configuration File
+# odex.conf Configuration File
 
 All command-line options (except for -conf) may be specified in a configuration file, and all configuration file options may also be specified on the command line. Command-line options override values set in the configuration file.
 
 The configuration file is a list of setting=value pairs, one per line, with optional comments starting with the '#' character.
 
-An empty configuration file is automatically created on first run. By default, bulwark (or bulwarkd) will look for a file named 'bulwark.conf' in the bulwark [directory]([data)], but both the data directory and the configuration file path may be changed using the -datadir and -conf command-line arguments.
+An empty configuration file is automatically created on first run. By default, odex (or odexd) will look for a file named 'odex.conf' in the odex [directory]([data)], but both the data directory and the configuration file path may be changed using the -datadir and -conf command-line arguments.
 
 <table>
 <tbody><tr>
@@ -1312,7 +1312,7 @@ An empty configuration file is automatically created on first run. By default, b
 Operating System
 </th>
 <th>
-Default Bulwark datadir
+Default Odex datadir
 </th>
 <th>
 Typical path to configuration file
@@ -1323,10 +1323,10 @@ Typical path to configuration file
 Windows
 </td>
 <td>
-%APPDATA%\Bulwark\
+%APPDATA%\Odex\
 </td>
 <td>
-C:\Users\username\AppData\Roaming\Bulwark\bulwark.conf
+C:\Users\username\AppData\Roaming\Odex\odex.conf
 </td>
 </tr>
 <tr>
@@ -1334,10 +1334,10 @@ C:\Users\username\AppData\Roaming\Bulwark\bulwark.conf
 Linux
 </td>
 <td>
-$HOME/.bulwark/
+$HOME/.odex/
 </td>
 <td>
-/home/username/.bulwark/bulwark.conf
+/home/username/.odex/odex.conf
 </td>
 </tr>
 <tr>
@@ -1345,19 +1345,19 @@ $HOME/.bulwark/
 Mac OSX
 </td>
 <td>
-$HOME/Library/Application Support/Bulwark/
+$HOME/Library/Application Support/Odex/
 </td>
 <td>
-/Users/username/Library/Application Support/Bulwark/bulwark.conf
+/Users/username/Library/Application Support/Odex/odex.conf
 </td>
 </tr>
 </tbody></table>
 
-Note: if running bulwark in testnet mode, the sub-folder "testnet4" will be appended to the data directory automatically.
+Note: if running odex in testnet mode, the sub-folder "testnet4" will be appended to the data directory automatically.
 
-# Sample bulwark.conf
+# Sample odex.conf
 
-See [https://github.com/bulwark-crypto/bulwark/blob/master/contrib/debian/examples/bulwark.conf]() for an up-to-date sample.
+See [https://github.com/odex-crypto/odex/blob/master/contrib/debian/examples/odex.conf]() for an up-to-date sample.
 
 # Platforms
 
@@ -1366,18 +1366,18 @@ See [https://github.com/bulwark-crypto/bulwark/blob/master/contrib/debian/exampl
 ### Start automatically
 
 
-To configure the bulwark client to start automatically:
+To configure the odex client to start automatically:
 
 You might use the configuration-file, or the GUI-Settings:
 
 Settings -> Options
 
 then mark the checkbox titled:
- [Start bulwark on system startup
+ [Start odex on system startup
 
 
 
 ### Batch automation
 
 
-To work with batch, you have to start the daemon (bulwarkd.exe). The bulwarkd.exe run with option "-server" will respond with GUI-messages you are not able to process its answers.
+To work with batch, you have to start the daemon (odexd.exe). The odexd.exe run with option "-server" will respond with GUI-messages you are not able to process its answers.

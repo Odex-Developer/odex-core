@@ -40,7 +40,7 @@ addons:
     - zlib1g-dev
 env:
   global:
-  - BULWARK_VERSION=2.0.0.0
+  - ODEX_VERSION=2.0.0.0
   - CCACHE_COMPRESS=1
   - CCACHE_SIZE=500M
   - CCACHE_TEMPDIR=/tmp/.ccache-temp
@@ -54,7 +54,7 @@ matrix:
         - g++-arm-linux-gnueabihf
         - binutils-arm-linux-gnueabihf
     env:
-    - BULWARK_CONFIG="--enable-glibc-back-compat --with-gui=no"
+    - ODEX_CONFIG="--enable-glibc-back-compat --with-gui=no"
     - HOST=arm-linux-gnueabihf
     - LABEL=ARM
     os: linux
@@ -69,7 +69,7 @@ matrix:
         - python3-zmq
         - qtdeclarative5-dev
     env:
-    - BULWARK_CONFIG="--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++
+    - ODEX_CONFIG="--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++
       --with-gui=qt5"
     - HOST=i686-pc-linux-gnu
     - LABEL=linux32
@@ -85,7 +85,7 @@ matrix:
         - python3-zmq
         - qtdeclarative5-dev
     env:
-    - BULWARK_CONFIG="--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++
+    - ODEX_CONFIG="--enable-zmq --enable-glibc-back-compat LDFLAGS=-static-libstdc++
       --with-gui=qt5"
     - CPPFLAGS="-DDEBUG_LOCKORDER -DENABLE_DASH_DEBUG"
     - HOST=x86_64-pc-linux-gnu
@@ -104,7 +104,7 @@ matrix:
         - python3
         - qtdeclarative5-dev
     env:
-    - BULWARK_CONFIG="--with-gui=qt5"
+    - ODEX_CONFIG="--with-gui=qt5"
     - HOST=i686-w64-mingw32
     - LABEL=win32
     os: linux
@@ -121,7 +121,7 @@ matrix:
         - python3
         - qtdeclarative5-dev
     env:
-    - BULWARK_CONFIG="--with-gui=qt5"
+    - ODEX_CONFIG="--with-gui=qt5"
     - HOST=x86_64-w64-mingw32
     - LABEL=win64
     os: linux
@@ -145,7 +145,7 @@ before_script:
 script:
 - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then make $MAKEJOBS -C depends HOST="$HOST";
   depends/$HOST/native/bin/ccache --max-size=$CCACHE_SIZE; sh ./autogen.sh; ./configure
-  --cache-file=config.cache $GLOBAL_CONFIG $BULWARK_CONFIG; make; fi
+  --cache-file=config.cache $GLOBAL_CONFIG $ODEX_CONFIG; make; fi
 - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then sh ./autogen.sh; ./configure --enable-reduce-exports;
   make deploy; fi
 before_deploy:

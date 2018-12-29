@@ -160,7 +160,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../bulwark.qrc"/>
+  <include location="../odex.qrc"/>
  </resources>
  <connections/>
 </ui>

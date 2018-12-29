@@ -1,19 +1,19 @@
-.TH BULWARKD "1" "February 2017" "bulwarkd 2.1.4.1"
+.TH ODEXD "1" "February 2017" "odexd 2.1.4.1"
 .SH NAME
-Bulwark \- peer-to-peer network based digital currency
+Odex \- peer-to-peer network based digital currency
 .SH SYNOPSIS
-bulwarkd [options] <command> [params]
+odexd [options] <command> [params]
 .TP
-bulwarkd [options] help <command> \- Get help for a command
+odexd [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This  manual page documents the bulwarkd program. Bulwark is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the odexd program. Odex is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
-Bulwark can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Bulwark system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
+Odex can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Odex system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
 .SH OPTIONS
 .TP
 \fB\-conf=\fR<file>
-Specify configuration file (default: bulwark.conf)
+Specify configuration file (default: odex.conf)
 .TP
 \fB\-gen\fR
 Generate coins
@@ -84,14 +84,14 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'bulwarkaddress'\fR
+\fBgetaccount 'odexaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'bulwarkaddress' ['account']\fR
+\fBsetaccount 'odexaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
-Returns a new bulwark address for 'account'.
+Returns a new odex address for 'account'.
 .TP
 \fBgetaddressesbyaccount 'account'\fR
 Returns the list of addresses associated with the given 'account'.
@@ -112,7 +112,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate BWK, false otherwise.
+Returns boolean true if server is trying to generate ODEX, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, \-1 is unlimited.
@@ -124,13 +124,13 @@ Returns a recent hashes per second performance measurement while generating.
 Returns an object containing server information.
 .TP
 \fBgetnewaddress 'account'\fR
-Returns a new bulwark address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
+Returns a new odex address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
 .TP
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'bulwarkaddress' ['minconf=1']\fR
-Returns the total amount received by 'bulwarkaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'odexaddress' ['minconf=1']\fR
+Returns the total amount received by 'odexaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -148,7 +148,7 @@ List commands, or get help for a command.
 .TP
 \fBlistaccounts ['minconf=1']\fR
 List accounts and their current balances.
-     *note: requires bulwark 1.0.2.1 or later.
+     *note: requires odex 1.0.2.1 or later.
 .TP
 \fBlistreceivedbyaccount ['minconf=1'] ['includeempty=false']\fR
 ['minconf'] is the minimum number of confirmations before payments are included. ['includeempty'] whether to include addresses that haven't received any payments. Returns an array of objects containing:
@@ -177,31 +177,31 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
     "message"       : message associated with transaction (only for send).
     "to"            : message-to associated with transaction (only for send).
 
-    *note: requires bulwark 1.0.2.1 or later.
+    *note: requires odex 1.0.2.1 or later.
 .TP
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'bulwarkaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'bulwarkaddress'. This method will fail if there is less than amount BWK with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'odexaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'odexaddress'. This method will fail if there is less than amount ODEX with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'bulwarkaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'bulwarkaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'odexaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'odexaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
-Stops the bulwark server.
+Stops the odex server.
 .TP
-\fBvalidateaddress 'bulwarkaddress'\fR
-Checks that 'bulwarkaddress' looks like a proper Bulwark address. Returns an object containing:
+\fBvalidateaddress 'odexaddress'\fR
+Checks that 'odexaddress' looks like a proper Odex address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : bulwarkaddress.
+    "address" : odexaddress.
 
     *note: ismine and address are only returned if the address is valid.
 
 .SH "SEE ALSO"
-bulwark.conf(5)
+odex.conf(5)
 .SH AUTHOR
 This manual page was written by Micah Anderson <micah@debian.org> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 

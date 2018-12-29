@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the bulwarkd tests manually, launch src/test/test_bulwark .
+To run the odexd tests manually, launch src/test/test_odex .
 
-To add more bulwarkd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more odexd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the bulwark-qt tests manually, launch src/qt/test/bulwark-qt_test
+To run the odex-qt tests manually, launch src/qt/test/odex-qt_test
 
-To add more bulwark-qt tests, add them to the `src/qt/test/` directory and
+To add more odex-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

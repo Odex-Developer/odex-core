@@ -131,7 +131,7 @@
                        </font>
                       </property>
                       <property name="text">
-                       <string>BWK Balances</string>
+                       <string>ODEX Balances</string>
                       </property>
                      </widget>
                     </item>
@@ -141,7 +141,7 @@
                        <cursorShape>WhatsThisCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the BWK network after a connection is established, but this process has not completed yet.</string>
+                       <string>The displayed information may be out of date. Your wallet automatically synchronizes with the ODEX network after a connection is established, but this process has not completed yet.</string>
                       </property>
                       <property name="styleSheet">
                        <string notr="true">QLabel { color: red; }</string>
@@ -208,7 +208,7 @@
                        <string>Unconfirmed transactions to watch-only addresses</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -233,7 +233,7 @@
                        <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -258,7 +258,7 @@
                        <string>Staked or masternode rewards in watch-only addresses that has not yet matured</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -290,7 +290,7 @@
                        <string>Staked or masternode rewards that has not yet matured</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -335,7 +335,7 @@
                        <string>Your current total balance</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -360,7 +360,7 @@
                        <string>Current total balance in watch-only addresses</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -402,7 +402,7 @@
                        <string>Your current spendable balance</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -427,7 +427,7 @@
                        <string>Your current balance in watch-only addresses</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -533,7 +533,7 @@
                      <widget class="QLabel" name="labelzBalanceMatureText">
                       <property name="toolTip">
                        <string>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zBWK are spendable.</string>
+These zODEX are spendable.</string>
                       </property>
                       <property name="text">
                        <string>Mature:</string>
@@ -552,10 +552,10 @@ These zBWK are spendable.</string>
                        <cursorShape>IBeamCursor</cursorShape>
                       </property>
                       <property name="toolTip">
-                       <string>All available zBWK, unconfirmed and immature zBWK included.</string>
+                       <string>All available zODEX, unconfirmed and immature zODEX included.</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -568,7 +568,7 @@ These zBWK are spendable.</string>
                     <item row="1" column="0">
                      <widget class="QLabel" name="labelzBalanceText">
                       <property name="toolTip">
-                       <string>All available zBWK, unconfirmed and immature zBWK included.</string>
+                       <string>All available zODEX, unconfirmed and immature zODEX included.</string>
                       </property>
                       <property name="text">
                        <string>Total:</string>
@@ -611,10 +611,10 @@ These zBWK are spendable.</string>
                       </property>
                       <property name="toolTip">
                        <string>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zBWK are spendable.</string>
+These zODEX are spendable.</string>
                       </property>
                       <property name="text">
-                       <string>0.000 000 00 BWK</string>
+                       <string>0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -645,7 +645,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                       </property>
                       <property name="text">
-                       <string>0.000 000 00 BWK</string>
+                       <string>0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -689,7 +689,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
 Immature: confirmed, but less than 1 mint of the same denomination after it was minted</string>
                       </property>
                       <property name="text">
-                       <string>0.000 000 00 BWK</string>
+                       <string>0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -808,7 +808,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -833,7 +833,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <string>Total Balance, including unconfirmed and immature coins.</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -866,7 +866,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                     <item row="1" column="0">
                      <widget class="QLabel" name="labelBalanceTextz">
                       <property name="text">
-                       <string>BWK:</string>
+                       <string>ODEX:</string>
                       </property>
                      </widget>
                     </item>
@@ -885,7 +885,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <string>Your current spendable balance</string>
                       </property>
                       <property name="text">
-                       <string notr="true">0.000 000 00 BWK</string>
+                       <string notr="true">0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -901,14 +901,14 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
                        <string/>
                       </property>
                       <property name="text">
-                       <string>zBWK:</string>
+                       <string>zODEX:</string>
                       </property>
                      </widget>
                     </item>
                     <item row="4" column="2">
-                     <widget class="QLabel" name="labelzBWKPercent">
+                     <widget class="QLabel" name="labelzODEXPercent">
                       <property name="toolTip">
-                       <string>Current percentage of zBWK.
+                       <string>Current percentage of zODEX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 0%)</string>
                       </property>
                       <property name="text">
@@ -932,10 +932,10 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                     <item row="2" column="1">
                      <widget class="QLabel" name="labelLockedBalance">
                       <property name="toolTip">
-                       <string>Locked BWK or Masternode collaterals. These are excluded from zBWK minting.</string>
+                       <string>Locked ODEX or Masternode collaterals. These are excluded from zODEX minting.</string>
                       </property>
                       <property name="text">
-                       <string>0.000 000 00 BWK</string>
+                       <string>0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -945,7 +945,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                     <item row="2" column="0">
                      <widget class="QLabel" name="labelLockedBalanceText">
                       <property name="toolTip">
-                       <string>Locked BWK or Masternode collaterals. These are excluded from zBWK minting.</string>
+                       <string>Locked ODEX or Masternode collaterals. These are excluded from zODEX minting.</string>
                       </property>
                       <property name="text">
                        <string>Locked:</string>
@@ -955,7 +955,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                     <item row="3" column="0">
                      <widget class="QLabel" name="labelUnLockedBalanceText">
                       <property name="toolTip">
-                       <string>Unlocked BWKs. These can be used for zBWK minting.</string>
+                       <string>Unlocked ODEXs. These can be used for zODEX minting.</string>
                       </property>
                       <property name="text">
                        <string>Unlocked:</string>
@@ -965,10 +965,10 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                     <item row="3" column="1">
                      <widget class="QLabel" name="labelUnLockedBalance">
                       <property name="toolTip">
-                       <string>Unlocked BWKs. These can be used for zBWK minting.</string>
+                       <string>Unlocked ODEXs. These can be used for zODEX minting.</string>
                       </property>
                       <property name="text">
-                       <string>0.000 000 00 BWK</string>
+                       <string>0.000 000 00 ODEX</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -976,7 +976,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                      </widget>
                     </item>
                     <item row="3" column="2">
-                     <widget class="QLabel" name="labelBWKPercent">
+                     <widget class="QLabel" name="labelODEXPercent">
                       <property name="text">
                        <string>0 %</string>
                       </property>
@@ -1053,7 +1053,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
                     <cursorShape>WhatsThisCursor</cursorShape>
                    </property>
                    <property name="toolTip">
-                    <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Bulwark network after a connection is established, but this process has not completed yet.</string>
+                    <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Odex network after a connection is established, but this process has not completed yet.</string>
                    </property>
                    <property name="styleSheet">
                     <string notr="true">QLabel { color: red; }</string>

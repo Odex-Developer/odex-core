@@ -73,15 +73,15 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += bulwarkd
+  bin_PROGRAMS += odexd
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += bulwark-cli bulwark-tx
+  bin_PROGRAMS += odex-cli odex-tx
 endif
 
 .PHONY: FORCE
-# bulwark core #
+# odex core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -188,7 +188,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between bulwarkd and bulwark-qt
+# server: shared between odexd and odex-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrdb.cpp \
@@ -233,7 +233,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between bulwarkd and bulwark-qt, but only linked
+# wallet: shared between odexd and odex-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -327,7 +327,7 @@ univalue_libbitcoin_univalue_a_SOURCES = \
   univalue/univalue_escapes.h \
   univalue/univalue.h
 
-# common: shared between bulwarkd, and bulwark-qt and non-server tools
+# common: shared between odexd, and odex-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -387,7 +387,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between bulwark-cli and bulwark-qt
+# cli: shared between odex-cli and odex-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -397,7 +397,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-bulwarkd_LDADD = \
+odexd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -409,26 +409,26 @@ bulwarkd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-bulwarkd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+odexd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-bulwarkd_LDADD += libbitcoin_wallet.a
+odexd_LDADD += libbitcoin_wallet.a
 endif
-bulwarkd_SOURCES = bulwarkd.cpp
+odexd_SOURCES = odexd.cpp
 #
 
 if TARGET_WINDOWS
-bulwarkd_SOURCES += bulwarkd-res.rc
+odexd_SOURCES += odexd-res.rc
 endif
 
-bulwarkd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-bulwarkd_CPPFLAGS = $(BITCOIN_INCLUDES)
-bulwarkd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+odexd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+odexd_CPPFLAGS = $(BITCOIN_INCLUDES)
+odexd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# bulwark-cli binary #
-bulwark_cli_LDADD = \
+# odex-cli binary #
+odex_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
@@ -436,14 +436,14 @@ bulwark_cli_LDADD = \
   $(SSL_LIBS) \
   $(CRYPTO_LIBS)
 
-bulwark_cli_SOURCES = \
-  bulwark-cli.cpp
+odex_cli_SOURCES = \
+  odex-cli.cpp
 
-bulwark_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
+odex_cli_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 
-# bulwark-tx binary #
-bulwark_tx_LDADD = \
+# odex-tx binary #
+odex_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -453,15 +453,15 @@ bulwark_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-bulwark_tx_SOURCES = bulwark-tx.cpp
-bulwark_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+odex_tx_SOURCES = odex-tx.cpp
+odex_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-bulwark_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+odex_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bulwark_cli_SOURCES += bulwark-cli-res.rc
+odex_cli_SOURCES += odex-cli-res.rc
 endif
-bulwark_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+odex_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

@@ -1,6 +1,6 @@
 [Protocol]
-exec=bulwark-qt '%u'
-protocol=bulwark
+exec=odex-qt '%u'
+protocol=odex
 input=none
 output=none
 helper=true

@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The PIVX Core developers, 2017-@COPYRIGHT_YEAR@ The Bulwark Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The PIVX Core developers, 2017-@COPYRIGHT_YEAR@ The Odex Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bulwark-Qt</string>
+  <string>Odex-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.bulwark.Bulwark-Qt</string>
+  <string>io.odex.Odex-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.bulwark.BulwarkPayment</string>
+      <string>io.odex.OdexPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bulwark</string>
+        <string>odex</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.bulwark.paymentrequest</string>
+      <string>io.odex.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Bulwark payment request</string>
+      <string>Odex payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-bulwark-payment-request</string>
+        <string>application/x-odex-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>bulwarkpaymentrequest</string>
+          <string>odexpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.bulwark.paymentrequest</string>
+        <string>io.odex.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

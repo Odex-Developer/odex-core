@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bulwark"
-            VALUE "FileDescription",    "bulwarkd (OSS daemon/client for Bulwark)"
+            VALUE "CompanyName",        "Odex"
+            VALUE "FileDescription",    "odexd (OSS daemon/client for Odex)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "bulwarkd"
+            VALUE "InternalName",       "odexd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "bulwarkd.exe"
-            VALUE "ProductName",        "bulwarkd"
+            VALUE "OriginalFilename",   "odexd.exe"
+            VALUE "ProductName",        "odexd"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

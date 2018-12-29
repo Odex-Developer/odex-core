@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/bulwark-crypto/bulwark
+url=https://github.com/odex-crypto/odex
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the bulwark, gitian-builder, gitian.sigs, and bulwark-detached-sigs.
+Run this script from the directory containing the odex, gitian-builder, gitian.sigs, and odex-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/bulwark-crypto/bulwark
+-u|--url	Specify the URL of the repository. Default is https://github.com/odex-crypto/odex
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitian build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -237,8 +237,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/bulwark-crypto/gitian.sigs.git
-    git clone https://github.com/bulwark-crypto/bulwark-detached-sigs.git
+    git clone https://github.com/odex-crypto/gitian.sigs.git
+    git clone https://github.com/odex-crypto/odex-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -252,7 +252,7 @@ then
 fi
 
 # Set up build
-pushd ./bulwark
+pushd ./odex
 git fetch
 git checkout ${COMMIT}
 popd
@@ -261,7 +261,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./bulwark-binaries/${VERSION}
+	mkdir -p ./odex-binaries/${VERSION}
 
 	# Build Dependencies
 	echo ""
@@ -271,7 +271,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../bulwark/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../odex/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -279,9 +279,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bulwark=${COMMIT} --url bulwark=${url} ../bulwark/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/bulwark-*.tar.gz build/out/src/bulwark-*.tar.gz ../bulwark-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit odex=${COMMIT} --url odex=${url} ../odex/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/odex-*.tar.gz build/out/src/odex-*.tar.gz ../odex-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -289,10 +289,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bulwark=${COMMIT} --url bulwark=${url} ../bulwark/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/bulwark-*-win-unsigned.tar.gz inputs/bulwark-win-unsigned.tar.gz
-	    mv build/out/bulwark-*.zip build/out/bulwark-*.exe ../bulwark-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit odex=${COMMIT} --url odex=${url} ../odex/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/odex-*-win-unsigned.tar.gz inputs/odex-win-unsigned.tar.gz
+	    mv build/out/odex-*.zip build/out/odex-*.exe ../odex-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -300,10 +300,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bulwark=${COMMIT} --url bulwark=${url} ../bulwark/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/bulwark-*-osx-unsigned.tar.gz inputs/bulwark-osx-unsigned.tar.gz
-	    mv build/out/bulwark-*.tar.gz build/out/bulwark-*.dmg ../bulwark-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit odex=${COMMIT} --url odex=${url} ../odex/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/odex-*-osx-unsigned.tar.gz inputs/odex-osx-unsigned.tar.gz
+	    mv build/out/odex-*.tar.gz build/out/odex-*.dmg ../odex-binaries/${VERSION}
 	fi
 	# AArch64
 	if [[ $aarch64 = true ]]
@@ -311,9 +311,9 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} AArch64"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bulwark=${COMMIT} --url bulwark=${url} ../bulwark/contrib/gitian-descriptors/gitian-aarch64.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-aarch64.yml
-	    mv build/out/bulwark-*.tar.gz build/out/src/bulwark-*.tar.gz ../bulwark-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit odex=${COMMIT} --url odex=${url} ../odex/contrib/gitian-descriptors/gitian-aarch64.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-aarch64 --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-aarch64.yml
+	    mv build/out/odex-*.tar.gz build/out/src/odex-*.tar.gz ../odex-binaries/${VERSION}
 	popd
 
         if [[ $commitFiles = true ]]
@@ -340,32 +340,32 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../bulwark/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../odex/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../bulwark/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../odex/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../bulwark/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../odex/contrib/gitian-descriptors/gitian-osx.yml
 	# AArch64
 	echo ""
 	echo "Verifying v${VERSION} AArch64"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../bulwark/contrib/gitian-descriptors/gitian-aarch64.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../odex/contrib/gitian-descriptors/gitian-aarch64.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../bulwark/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../odex/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../bulwark/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../odex/contrib/gitian-descriptors/gitian-osx-signer.yml
 	popd
 fi
 
@@ -380,10 +380,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../bulwark/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/bulwark-*win64-setup.exe ../bulwark-binaries/${VERSION}
-	    mv build/out/bulwark-*win32-setup.exe ../bulwark-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../odex/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/odex-*win64-setup.exe ../odex-binaries/${VERSION}
+	    mv build/out/odex-*win32-setup.exe ../odex-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -391,9 +391,9 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../bulwark/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../bulwark/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/bulwark-osx-signed.dmg ../bulwark-binaries/${VERSION}/bulwark-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../odex/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../odex/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/odex-osx-signed.dmg ../odex-binaries/${VERSION}/odex-${VERSION}-osx.dmg
 	fi
 	popd
 

@@ -1,5 +1,5 @@
 ---
-name: "bulwark-dmg-signer"
+name: "odex-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/bulwark-crypto/bulwark-detached-sigs.git"
+- "url": "https://github.com/odex-crypto/odex-detached-sigs.git"
   "dir": "signature"
 files:
-- "bulwark-osx-unsigned.tar.gz"
+- "odex-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,11 +27,11 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=bulwark-osx-unsigned.tar.gz
-  SIGNED=bulwark-osx-signed.dmg
+  UNSIGNED=odex-osx-unsigned.tar.gz
+  SIGNED=odex-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"
   ./detached-sig-apply.sh ${UNSIGNED} signature/osx
-  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Bulwark-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
+  ${WRAP_DIR}/genisoimage -no-cache-inodes -D -l -probe -V "Odex-Qt" -no-pad -r -dir-mode 0755 -apple -o uncompressed.dmg signed-app
   ${WRAP_DIR}/dmg dmg uncompressed.dmg ${OUTDIR}/${SIGNED}

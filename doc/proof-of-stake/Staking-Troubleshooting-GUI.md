@@ -34,7 +34,7 @@ This should always be true, this just shows that the POS period is active for th
 
 ## haveconnections
 
-This makes sure you have valid peers, if this is showing as false I'd recommend following the instructions listed in: [Wallet and Syncing Issues](https://kb.bulwarkcrypto.com/Guides/Wallet-Syncing-Issues/)
+This makes sure you have valid peers, if this is showing as false I'd recommend following the instructions listed in: [Wallet and Syncing Issues](https://kb.odexcrypto.com/Guides/Wallet-Syncing-Issues/)
 
 ## walletunlocked
 
@@ -48,11 +48,11 @@ This is asking if your transaction is old enough to be staked. It takes 475 conf
 
 ## enoughcoins
 
-This is making sure you have more than 100 BWK in the wallet. If this is appearing false there are a wide number of potential problems. It's best to come ask us in [Discord](https://discord.me/bulwarkcrypto) or [Telegram](https://t.me/bulwarkcrypto) if you have issues with this.
+This is making sure you have more than 100 ODEX in the wallet. If this is appearing false there are a wide number of potential problems. It's best to come ask us in [Discord](https://discord.me/odexcrypto) or [Telegram](https://t.me/odexcrypto) if you have issues with this.
 
 ## mnsync
 
-This just makes sure your wallet is fully synced, if you appear to be fully synced I'd recommend following the steps listed in: [Wallet and Syncing Issues](https://kb.bulwarkcrypto.com/Guides/Wallet-Syncing-Issues/)
+This just makes sure your wallet is fully synced, if you appear to be fully synced I'd recommend following the steps listed in: [Wallet and Syncing Issues](https://kb.odexcrypto.com/Guides/Wallet-Syncing-Issues/)
 
 ## staking status
 

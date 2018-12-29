@@ -1,2 +1,2 @@
-usr/local/bin/bulwarkd usr/bin
-usr/local/bin/bulwark-cli usr/bin
+usr/local/bin/odexd usr/bin
+usr/local/bin/odex-cli usr/bin

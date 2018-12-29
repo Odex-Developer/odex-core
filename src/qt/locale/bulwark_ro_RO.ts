@@ -183,9 +183,9 @@
     </message>
     </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     </context>
 </TS>

@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE BWK!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ODEX!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Bulwark jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Odex jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt Key</source>
@@ -518,16 +518,16 @@
         <translation>Pomoc</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation>Rdzeń bitcoin</translation>
     </message>
     <message>
-        <source>Send coins to a Bulwark address</source>
-        <translation>Wyślij monety do adresu Bulwark</translation>
+        <source>Send coins to a Odex address</source>
+        <translation>Wyślij monety do adresu Odex</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bulwark: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i bulwark:URI)</translation>
+        <source>Request payments (generates QR codes and odex: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i odex:URI)</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
+        <source>About Odex Core</source>
         <translation>O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about Bulwark Core</source>
+        <source>Show information about Odex Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bulwark</source>
-        <translation>Modyfikuj opcje konfiguracji Bulwark</translation>
+        <source>Modify configuration options for Odex</source>
+        <translation>Modyfikuj opcje konfiguracji Odex</translation>
     </message>
     <message>
-        <source>Sign messages with your Bulwark addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami Bulwark, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your Odex addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami Odex, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bulwark addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Bulwark</translation>
+        <source>Verify messages to ensure they were signed with specified Odex addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu Odex</translation>
     </message>
     <message>
         <source>BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a Bulwark: URI or payment request</source>
-        <translation>Otwórz Bulwark: URI i żądanie zapłaty</translation>
+        <source>Open a Odex: URI or payment request</source>
+        <translation>Otwórz Odex: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the Bulwark Core help message to get a list with possible Bulwark command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia Bulwark, aby dostać listę możliwych opcji Bulwark command-line</translation>
+        <source>Show the Odex Core help message to get a list with possible Odex command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia Odex, aby dostać listę możliwych opcji Odex command-line</translation>
     </message>
     <message>
-        <source>Bulwark Core client</source>
-        <translation>Rdzeń Bulwark klient</translation>
+        <source>Odex Core client</source>
+        <translation>Rdzeń Odex klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,7 +912,7 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation>Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -927,7 +927,7 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation>Rdzeń bitcoin</translation>
     </message>
     <message>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start Bulwark after logging in to the system.</source>
-        <translation>Automatycznie uruchom Bulwark po zalogowaniu do systemu</translation>
+        <source>Automatically start Odex after logging in to the system.</source>
+        <translation>Automatycznie uruchom Odex po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>Start Bulwark on system login</source>
-        <translation>Uruchom Bulwark podczas logowania do systemu</translation>
+        <source>Start Odex on system login</source>
+        <translation>Uruchom Odex podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bulwark.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Bulwark</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Odex.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie Odex</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
+https://www.transifex.com/odex-project/odex-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/bulwark-project/bulwark-project-translations </translation>
+https://www.transifex.com/odex-project/odex-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the Bulwark network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią Bulwark poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the Odex network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią Odex poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations </transla
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a Bulwark address (e.g. %1)</source>
-        <translation>Wprowadź adres Bulwark (np. %1)</translation>
+        <source>Enter a Odex address (e.g. %1)</source>
+        <translation>Wprowadź adres Odex (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations </transla
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Bulwark jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres Odex jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear All</source>
@@ -1935,7 +1935,7 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations </transla
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation>Rdzeń bitcoin</translation>
     </message>
     </context>
@@ -2027,14 +2027,14 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations </transla
     </message>
     </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

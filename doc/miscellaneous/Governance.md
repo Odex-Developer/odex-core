@@ -4,7 +4,7 @@ We will utilize a multi-phase process for creating and submitting proposals. Eac
 
 * Start in our Discord chat, and talk with some of the seasoned users. Gauge interest and if the response is positive, move to the next phase.
 
-* Utilize multiple social media platforms to discuss and get feedback. Remember that Bulwark has a diverse userbase and differing levels of governance participation, reaching a portion of the userbase will often require some footwork. Take note of these discussions and be able to cite them in the formal pre-proposal. The more citations provided, the better.
+* Utilize multiple social media platforms to discuss and get feedback. Remember that Odex has a diverse userbase and differing levels of governance participation, reaching a portion of the userbase will often require some footwork. Take note of these discussions and be able to cite them in the formal pre-proposal. The more citations provided, the better.
 
 * Be open to suggestions from the community and developers. Be flexible and willing to incorporate external ideas and suggestions in your proposal.
 

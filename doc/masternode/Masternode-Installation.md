@@ -6,9 +6,9 @@ The VPS you plan to install your masternode on needs to have at least 1GB of RAM
 
 ## Funding your masternode
 
-* First, we will do the initial collateral TX and send exactly 5000 BWK to one of our addresses. To keep things sorted in case we setup more masternodes we will label the addresses we use.
+* First, we will do the initial collateral TX and send exactly 5000 ODEX to one of our addresses. To keep things sorted in case we setup more masternodes we will label the addresses we use.
 
-  - Open your BWK wallet and switch to the "Receive" tab.
+  - Open your ODEX wallet and switch to the "Receive" tab.
 
   - Click into the label field and create a label, I will use MN1
 
@@ -16,7 +16,7 @@ The VPS you plan to install your masternode on needs to have at least 1GB of RAM
 
   - The generated address will now be labelled as MN1 If you want to setup more masternodes just repeat the steps so you end up with several addresses for the total number of nodes you wish to setup. Example: For 10 nodes you will need 10 addresses, label them all.
 
-  - Once all addresses are created send 5000 BWK each to them. Ensure that you send exactly 5000 BWK and do it in a single transaction. You can double check where the coins are coming from by checking it via coin control usually, that's not an issue.
+  - Once all addresses are created send 5000 ODEX each to them. Ensure that you send exactly 5000 ODEX and do it in a single transaction. You can double check where the coins are coming from by checking it via coin control usually, that's not an issue.
 
 As soon as all 5k transactions are done, we will wait for 15 confirmations. You can check this in your wallet or use the explorer.
 It should take around 30 minutes if all transaction have 15 confirmations.
@@ -41,16 +41,16 @@ masternode outputs
 
 Copy both the key and output information to a text file.
 
-Close your wallet and open the Bulwark Appdata folder. Its location depends on your OS.
+Close your wallet and open the Odex Appdata folder. Its location depends on your OS.
 
-* **Windows:** %APPDATA%\\Roaming\\Bulwark
+* **Windows:** %APPDATA%\\Roaming\\Odex
 _Press Windows+R and write %appdata%_
 
-* **Linux:** ~/.bulwark/
-_Navigate to the .bulwark folder in your home directory_
+* **Linux:** ~/.odex/
+_Navigate to the .odex folder in your home directory_
 
-* **macOS:** ~/Library/Application Support/Bulwark
-_Press Cmd+Space, type ~/Library/Application Support/Bulwark and press Enter._
+* **macOS:** ~/Library/Application Support/Odex
+_Press Cmd+Space, type ~/Library/Application Support/Odex and press Enter._
 
 In your appdata folder, open masternode.conf with a text editor and add a new line in this format to the bottom of the file:
 
@@ -75,7 +75,7 @@ Restart and unlock your wallet.
 SSH (Putty on Windows, Terminal.app on macOS) to your VPS, login as root (**Please note:** It's normal that you don't see your password after typing or pasting it) and run the following command:
 
 ```bash
-bash <( curl https://raw.githubusercontent.com/bulwark-crypto/Bulwark-MN-Install/master/install.sh )
+bash <( curl https://raw.githubusercontent.com/odex-crypto/Odex-MN-Install/master/install.sh )
 ```
 
 When the script asks, confirm your VPS IP Address and paste your masternode key.
@@ -83,7 +83,7 @@ When the script asks, confirm your VPS IP Address and paste your masternode key.
 
 The installer will then present you with a few options.
 
-**PLEASE NOTE**: Do not choose the advanced installation option unless you have experience with Linux and know what you are doing. Advanced mode  will install your masternode under a non-root user called "bulwark" instead of root, so you need to know what that means and how to log in as a different user under Linux. If you don't, things will not work as expected and the Bulwark team CANNOT help you - you will have to restart the installation.
+**PLEASE NOTE**: Do not choose the advanced installation option unless you have experience with Linux and know what you are doing. Advanced mode  will install your masternode under a non-root user called "odex" instead of root, so you need to know what that means and how to log in as a different user under Linux. If you don't, things will not work as expected and the Odex team CANNOT help you - you will have to restart the installation.
 
 Follow the instructions on screen.
 

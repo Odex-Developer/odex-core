@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/bulwark/.bulwark" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bulwark/.bulwark"
+if [ -d "/var/lib/odex/.odex" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/odex/.odex"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/bulwarkd"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/odexd"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/bulwark/bulwark.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/bulwarkd}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/bulwarkd.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/odex/odex.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/odexd}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/odexd.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-bulwark}
-BITCOIND_GROUP=${BITCOIND_GROUP:-bulwark}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/bulwarkd}
+BITCOIND_USER=${BITCOIND_USER:-odex}
+BITCOIND_GROUP=${BITCOIND_GROUP:-odex}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/odexd}
 
-name="Bulwark Core Daemon"
-description="Bulwark crypto-currency p2p network daemon"
+name="Odex Core Daemon"
+description="Odex crypto-currency p2p network daemon"
 
-command="/usr/bin/bulwarkd"
+command="/usr/bin/odexd"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run bulwarkd."
+		eerror "ERROR: You must set a secure rpcpassword to run odexd."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Bulwark Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"Odex Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -1,4 +1,4 @@
-Bulwark Core Documentation
+Odex Core Documentation
 =====================
 
 ### Tables of Contents
@@ -22,39 +22,39 @@ Bulwark Core Documentation
 
 Setup
 ---------------------
-[Bulwark Core](http://bulwarkcrypto.com.org/#downloads) is the original Bulwark client and it builds the backbone of the network. However, it downloads and stores the entire history of BWK transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Odex Core](http://odexcrypto.com.org/#downloads) is the original Odex client and it builds the backbone of the network. However, it downloads and stores the entire history of ODEX transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run bwk on your native platform.
+The following are some helpful notes on how to run odex on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- ./bulwark-qt (GUI) or ./bulwarkd (headless)
+- ./odex-qt (GUI) or ./odexd (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run bulwark-qt.exe.
+Unpack the files into a directory, and then run odex-qt.exe.
 
 ### OSX
 
-Drag Bulwark-Qt to your applications folder, and then run Bulwark-Qt.
+Drag Odex-Qt to your applications folder, and then run Odex-Qt.
 
 ### Need Help?
 
-* Ask for help on [Discord](https://discord.me/bulwarkcrypto) or on the [Bulwark Telegram](https://t.me/bulwarkcrypto).
-* Join our [Reddit Community](https://www.reddit.com/r/BulwarkCoin/)
-* Tweet at [Bulwark-Crypto](https://twitter.com/BulwarkCoin)
+* Ask for help on [Discord](https://discord.me/odexcrypto) or on the [Odex Telegram](https://t.me/odexcrypto).
+* Join our [Reddit Community](https://www.reddit.com/r/OdexCoin/)
+* Tweet at [Odex-Crypto](https://twitter.com/OdexCoin)
 
 ### Ran into a Bug?
 
-* Submit an Issue on our [GitHub](https://github.com/bulwark-crypto/Bulwark/issues)
+* Submit an Issue on our [GitHub](https://github.com/odex-crypto/Odex/issues)
 
 Building
 ---------------------
-The following are developer notes on how to build bwk on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build odex on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [Unix Build Notes](building/Linux-Build-Guide.md)
 - [MacOS Build Notes](building/MacOS-Build-Guide.md)
@@ -64,28 +64,28 @@ The following are developer notes on how to build bwk on your native platform. T
 
 Development
 ---------------------
-The Bulwark repo's [root README](https://github.com/bulwark-crypto/Bulwark/blob/master/README.md) contains relevant information our parameters.
+The Odex repo's [root README](https://github.com/odex-crypto/Odex/blob/master/README.md) contains relevant information our parameters.
 
 - [Developer Notes](miscellaneous/Developer-Notes.md)
-- [Multiwallet Qt Development](bulwark-core/multiwallet-qt.md)
+- [Multiwallet Qt Development](odex-core/multiwallet-qt.md)
 - [Release Notes](release-notes/)
 - [Unit Tests](miscellaneous/unit-tests.md)
-- [Unauthenticated REST Interface](bulwark-core/REST-interface.md)
+- [Unauthenticated REST Interface](odex-core/REST-interface.md)
 - [Dnsseed Policy](miscellaneous/dnsseed-policy.md)
 
 ### Wallet Information
 
-- [Core Files](bulwark-core/Bulwark-Core-Files.md)
-- [Default Data Locations](bulwark-core/Default-Data-Locations.md)
-- [Running Bulwark](bulwark-core/Running-Bulwark.md)
-- [Init Commands](bulwark-core/bulwarkd-init.md)
-- [API Calls](bulwark-core/Bulwark-API-Calls.md)
-- [Bootstrap](bulwark-core/Bootstrap.md)
-- [Traffic Reduction](bulwark-core/Reduce-Traffic-in-Bulwark-Core.md)
-- [Accounts](bulwark-core/Accounts-Explained.md)
-- [Multisend](bulwark-core/Multisend-Setup-Guide.md)
-- [Data Locations](bulwark-core/Default-Data-Locations.md)
-- [TOR Support](bulwark-core/TOR-Support-In-Bulwark.md)
+- [Core Files](odex-core/Odex-Core-Files.md)
+- [Default Data Locations](odex-core/Default-Data-Locations.md)
+- [Running Odex](odex-core/Running-Odex.md)
+- [Init Commands](odex-core/odexd-init.md)
+- [API Calls](odex-core/Odex-API-Calls.md)
+- [Bootstrap](odex-core/Bootstrap.md)
+- [Traffic Reduction](odex-core/Reduce-Traffic-in-Odex-Core.md)
+- [Accounts](odex-core/Accounts-Explained.md)
+- [Multisend](odex-core/Multisend-Setup-Guide.md)
+- [Data Locations](odex-core/Default-Data-Locations.md)
+- [TOR Support](odex-core/TOR-Support-In-Odex.md)
 
 ### Masternode Information
 

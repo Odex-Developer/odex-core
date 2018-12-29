@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Bulwark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Odex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Bulwark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Odex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Bulwark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BWKs from being stolen by malware infecting your computer.</source>
+        <source>Odex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ODEXs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -307,7 +307,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a Bulwark Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a Odex Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -318,7 +318,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The Bulwark address to sign the message with</source>
+        <source>The Odex address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -360,7 +360,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bulwark address</source>
+        <source>Sign the message to prove you own this Odex address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -391,12 +391,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The Bulwark address the message was signed with</source>
+        <source>The Odex address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +546,7 @@
     </message>
     <message>
         <location line="+11"/>
-        <source>Privacy Actions for zBWK</source>
+        <source>Privacy Actions for zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -811,17 +811,17 @@
     <message>
         <location line="-427"/>
         <location line="+890"/>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-707"/>
-        <source>Send coins to a Bulwark address</source>
+        <source>Send coins to a Odex address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+11"/>
-        <source>Request payments (generates QR codes and bulwark: URIs)</source>
+        <source>Request payments (generates QR codes and odex: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -841,27 +841,27 @@
     </message>
     <message>
         <location line="+31"/>
-        <source>About Bulwark Core</source>
+        <source>About Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about Bulwark Core</source>
+        <source>Show information about Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Modify configuration options for Bulwark</source>
+        <source>Modify configuration options for Odex</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your Bulwark addresses to prove you own them</source>
+        <source>Sign messages with your Odex addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bulwark addresses</source>
+        <source>Verify messages to ensure they were signed with specified Odex addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -901,7 +901,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Open a Bulwark: URI or payment request</source>
+        <source>Open a Odex: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -916,17 +916,17 @@
     </message>
     <message>
         <location line="+4"/>
-        <source>Show the Bulwark Core help message to get a list with possible Bulwark command-line options</source>
+        <source>Show the Odex Core help message to get a list with possible Odex command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+214"/>
-        <source>Bulwark Core client</source>
+        <source>Odex Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location line="+212"/>
-        <source>%n active connection(s) to Bulwark network</source>
+        <source>%n active connection(s) to Odex network</source>
         <translation type="unfinished">
             <numerusform></numerusform>
             <numerusform></numerusform>
@@ -1127,7 +1127,7 @@ Address: %4
     </message>
     <message>
         <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bulwark.conf).</source>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (odex.conf).</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1496,7 +1496,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bulwark address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Odex address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1552,7 +1552,7 @@ Address: %4
     </message>
     <message>
         <location line="+0"/>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1563,7 +1563,7 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>About Bulwark Core</source>
+        <source>About Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1621,17 +1621,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Bulwark Core.</source>
+        <source>Welcome to Odex Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Bulwark Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Odex Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Bulwark Core will download and store a copy of the Bulwark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Odex Core will download and store a copy of the Odex block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1646,7 +1646,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+77"/>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1822,8 +1822,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Bulwark addresses after it matures.
-To Add: enter percentage to give and Bulwark address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Odex addresses after it matures.
+To Add: enter percentage to give and Odex address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2078,7 +2078,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send BWK to</source>
+        <source>Add destinations to send ODEX to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2210,12 +2210,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 5000 BWK</source>
+        <source>Use 2 separate masternodes to mix funds up to 5000 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 5000 BWK</source>
+        <source>Use 8 separate masternodes to mix funds up to 5000 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2225,12 +2225,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 BWK to anonymize 5000 BWK</source>
+        <source>This option is the quickest and will cost about ~0.025 ODEX to anonymize 5000 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 BWK to anonymize 5000 BWK</source>
+        <source>This option is moderately fast and will cost about 0.05 ODEX to anonymize 5000 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2240,7 +2240,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+13"/>
-        <source>0.1 BWK per 5000 BWK you anonymize.</source>
+        <source>0.1 ODEX per 5000 ODEX you anonymize.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2252,17 +2252,17 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Bulwark&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Odex&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Bulwark&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Odex&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Bulwark&apos;s configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Odex&apos;s configuration screen.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2338,7 +2338,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Bulwark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Odex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2363,12 +2363,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="-176"/>
-        <source>Automatically start Bulwark after logging in to the system.</source>
+        <source>Automatically start Odex after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Start Bulwark on system login</source>
+        <source>Start Odex on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2403,13 +2403,13 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bulwark.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Odex.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+21"/>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
+https://www.transifex.com/odex-project/odex-project-translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2419,28 +2419,28 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
     </message>
     <message>
         <location line="-133"/>
-        <source>Percentage of incoming BWK which get automatically converted to zBWK via Zerocoin Protocol</source>
+        <source>Percentage of incoming ODEX which get automatically converted to zODEX via Zerocoin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zBWK</source>
+        <source>Percentage of autominted zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+30"/>
         <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough BWK for this denomination is available</source>
+        <source>Wait with automatic conversion to Zerocoin until enough ODEX for this denomination is available</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zBWK Denomination</source>
+        <source>Preferred Automint zODEX Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>Connect to the Bulwark network through a SOCKS5 proxy.</source>
+        <source>Connect to the Odex network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2605,7 +2605,7 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
     </message>
     <message>
         <location line="+43"/>
-        <source>BWK Balances</source>
+        <source>ODEX Balances</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2644,7 +2644,7 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
     <message>
         <location line="-153"/>
         <location line="+1393"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bulwark network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Odex network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2706,17 +2706,17 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
     </message>
     <message>
         <location line="+36"/>
-        <source>BWK:</source>
+        <source>ODEX:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>zBWK:</source>
+        <source>zODEX:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Current percentage of zBWK.
+        <source>Current percentage of zODEX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2729,7 +2729,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="-46"/>
         <location line="+13"/>
-        <source>Locked BWK or Masternode collaterals. These are excluded from zBWK minting.</source>
+        <source>Locked ODEX or Masternode collaterals. These are excluded from zODEX minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2738,7 +2738,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+189"/>
         <location line="+31"/>
         <location line="+44"/>
-        <source>0.000 000 00 BWK</source>
+        <source>0.000 000 00 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2749,7 +2749,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     <message>
         <location line="+7"/>
         <location line="+10"/>
-        <source>Unlocked BWKs. These can be used for zBWK minting.</source>
+        <source>Unlocked ODEXs. These can be used for zODEX minting.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2766,7 +2766,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
         <location line="+14"/>
         <location line="+104"/>
         <source>Mature: more than 20 confirmation and more than 1 mint of the same denomination after it was minted.
-These zBWK are spendable.</source>
+These zODEX are spendable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2777,7 +2777,7 @@ These zBWK are spendable.</source>
     <message>
         <location line="+23"/>
         <location line="+35"/>
-        <source>All available zBWK, unconfirmed and immature zBWK included.</source>
+        <source>All available zODEX, unconfirmed and immature zODEX included.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2807,7 +2807,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+93"/>
-        <source>Current percentage of zBWK.
+        <source>Current percentage of zODEX.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage.
 </source>
         <translation type="unfinished"></translation>
@@ -2819,13 +2819,13 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
     </message>
     <message>
         <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in bulwark.conf.</source>
+        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in odex.conf.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
         <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in bulwark.conf</source>
+To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in odex.conf</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2865,12 +2865,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="-108"/>
-        <source>Cannot start bulwark: click-to-pay handler</source>
+        <source>Cannot start odex: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Bulwark address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Odex address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2973,12 +2973,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <name>PrivacyDialog</name>
     <message>
         <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>BWK which were anonymized via Zerocin Protocol</source>
+        <source>ODEX which were anonymized via Zerocin Protocol</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Zerocoin BWK (zBWK)</source>
+        <source>Zerocoin ODEX (zODEX)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2988,13 +2988,13 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bulwark network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Odex network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+52"/>
         <location line="+46"/>
-        <source>Enter an amount of BWK to convert to zBWK</source>
+        <source>Enter an amount of ODEX to convert to zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3014,7 +3014,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     <message>
         <location line="-349"/>
         <location line="+629"/>
-        <source>zBWK</source>
+        <source>zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3029,7 +3029,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+13"/>
-        <source>0.000 000 00 BWK</source>
+        <source>0.000 000 00 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3074,12 +3074,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+45"/>
-        <source>zBWK Control</source>
+        <source>zODEX Control</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>zBWK Selected:</source>
+        <source>zODEX Selected:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3104,7 +3104,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+7"/>
-        <source>Available (mature and spendable) zBWK for spending</source>
+        <source>Available (mature and spendable) zODEX for spending</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3114,15 +3114,15 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
     <message>
         <location line="+16"/>
-        <source>Available (mature and spendable) zBWK for spending
+        <source>Available (mature and spendable) zODEX for spending
 
-zBWK are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
+zODEX are mature when they have more than 20 confirmations AND more than 1 mint of the same denomination after them were minted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+5"/>
         <location line="+417"/>
-        <source>0 zBWK</source>
+        <source>0 zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3147,7 +3147,7 @@ zBWK are mature when they have more than 20 confirmations AND more than 1 mint o
     </message>
     <message>
         <location line="+27"/>
-        <source>The Bulwark address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The Odex address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3213,7 +3213,7 @@ zBWK are mature when they have more than 20 confirmations AND more than 1 mint o
     <message>
         <location line="+62"/>
         <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zBWK</source>
+        <source>Total Balance including unconfirmed and immature zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3424,13 +3424,13 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     <message>
         <location line="+45"/>
         <location line="+3"/>
-        <source>zBWK is currently disabled due to maintenance.</source>
+        <source>zODEX is currently disabled due to maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+50"/>
         <location line="+113"/>
-        <source>zBWK is currently undergoing maintenance.</source>
+        <source>zODEX is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3455,7 +3455,7 @@ Immature: confirmed, but less than 1 mint of the same denomination after it was 
     </message>
     <message>
         <location line="+0"/>
-        <source> zBWK in </source>
+        <source> zODEX in </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3497,7 +3497,7 @@ Please be patient...</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Invalid Bulwark Address</source>
+        <source>Invalid Odex Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3567,7 +3567,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+15"/>
-        <source>zBWK Spend #: </source>
+        <source>zODEX Spend #: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3597,7 +3597,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>zBWK Mint</source>
+        <source>zODEX Mint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3625,7 +3625,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a Bulwark address (e.g. %1)</source>
+        <source>Enter a Odex address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3820,7 +3820,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+79"/>
-        <source>Open the Bulwark debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Odex debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4047,7 +4047,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-36"/>
-        <source>Welcome to the Bulwark RPC console.</source>
+        <source>Welcome to the Odex RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4163,12 +4163,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bulwark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Odex network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Bulwark network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Odex network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4451,7 +4451,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+7"/>
-        <source>0 BWK</source>
+        <source>0 ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4521,18 +4521,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBWKs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uODEXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uBWKs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uODEXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Bulwark transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Odex transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4592,7 +4592,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+35"/>
-        <source>Anonymized BWK</source>
+        <source>Anonymized ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4663,7 +4663,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+622"/>
-        <source>Warning: Invalid BWK address</source>
+        <source>Warning: Invalid ODEX address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4802,7 +4802,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The Bulwark address to send the payment to</source>
+        <source>The Odex address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4856,7 +4856,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Bulwark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bulwark network.</source>
+        <source>A message that was attached to the Odex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Odex network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4891,7 +4891,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Bulwark Core is shutting down...</source>
+        <source>Odex Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4919,7 +4919,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+18"/>
-        <source>The Bulwark address to sign the message with</source>
+        <source>The Odex address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4961,17 +4961,17 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bulwark address</source>
+        <source>Sign the message to prove you own this Odex address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The Bulwark address the message was signed with</source>
+        <source>The Odex address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5086,7 +5086,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Bulwark Core</source>
+        <source>Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5106,7 +5106,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>The Bulwark Core developers</source>
+        <source>The Odex Core developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5533,27 +5533,27 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted BWK to zBWK</source>
+        <source>Converted ODEX to zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zBWK</source>
+        <source>Spent zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received BWK from zBWK</source>
+        <source>Received ODEX from zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zBWK from zBWK Spend</source>
+        <source>Minted Change as zODEX from zODEX Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zBWK to BWK</source>
+        <source>Converted zODEX to ODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5563,7 +5563,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+22"/>
-        <source>zBWK Accumulator</source>
+        <source>zODEX Accumulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5702,7 +5702,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Received BWK from zBWK</source>
+        <source>Received ODEX from zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5717,7 +5717,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+1"/>
-        <source>Zerocoin Spend, Change in zBWK</source>
+        <source>Zerocoin Spend, Change in zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5874,7 +5874,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 BWK.</source>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 ODEX.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5927,10 +5927,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     <message>
-        <location filename="../forms/zbwkcontroldialog.ui" line="+20"/>
-        <source>Select zBWK to Spend</source>
+        <location filename="../forms/zodexcontroldialog.ui" line="+20"/>
+        <source>Select zODEX to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5946,7 +5946,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="-7"/>
-        <source>zBWK</source>
+        <source>zODEX</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5961,9 +5961,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
-        <location filename="../bulwarkstrings.cpp" line="+15"/>
+        <location filename="../odexstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5999,7 +5999,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Bulwark Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Odex Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6064,12 +6064,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in BWK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in ODEX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in BWK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in ODEX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6194,22 +6194,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use bulwarkd, or the -server option to bulwark-qt, you must set an rpcpassword in the configuration file:
+        <source>To use odexd, or the -server option to odex-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bulwarkrpc
+rpcuser=odexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Odex Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Bulwark Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Odex Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6219,12 +6219,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 BWK.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 ODEX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 5000 BWK.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 5000 ODEX.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6244,7 +6244,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Bulwark Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Odex Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6439,12 +6439,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Bulwark Core Developers</source>
+        <source>Copyright (C) 2015-%i The Odex Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2017-%i The Bulwark Core Developers</source>
+        <source>Copyright (C) 2017-%i The Odex Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6559,7 +6559,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bulwark Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Odex Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6639,7 +6639,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in BWK/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in ODEX/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6714,7 +6714,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Bulwark Core is shutting down.</source>
+        <source>Initialization sanity check failed. Odex Core is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6831,7 +6831,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+38"/>
-        <source>Disable all Bulwark specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all Odex specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6841,7 +6841,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zBWK minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each zODEX minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7591,7 +7591,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bulwark Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Bulwark Core to complete</source>
+        <source>Wallet needed to be rewritten: restart Odex Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

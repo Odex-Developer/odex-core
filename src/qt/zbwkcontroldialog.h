@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ZBWKCONTROLDIALOG_H
-#define ZBWKCONTROLDIALOG_H
+#ifndef ZODEXCONTROLDIALOG_H
+#define ZODEXCONTROLDIALOG_H
 
 #include <QDialog>
 #include <QTreeWidgetItem>
@@ -14,16 +14,16 @@ class CZerocoinMint;
 class WalletModel;
 
 namespace Ui {
-class ZBwkControlDialog;
+class ZOdexControlDialog;
 }
 
-class ZBwkControlDialog : public QDialog
+class ZOdexControlDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit ZBwkControlDialog(QWidget *parent);
-    ~ZBwkControlDialog();
+    explicit ZOdexControlDialog(QWidget *parent);
+    ~ZOdexControlDialog();
 
     void setModel(WalletModel* model);
 
@@ -32,7 +32,7 @@ public:
     static std::vector<CZerocoinMint> GetSelectedMints();
 
 private:
-    Ui::ZBwkControlDialog *ui;
+    Ui::ZOdexControlDialog *ui;
     WalletModel* model;
     PrivacyDialog* privacyDialog;
 
@@ -52,4 +52,4 @@ private slots:
     void ButtonAllClicked();
 };
 
-#endif // ZBWKCONTROLDIALOG_H
+#endif // ZODEXCONTROLDIALOG_H

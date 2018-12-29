@@ -1,19 +1,19 @@
 [Unit]
-Description=Bulwark's distributed currency daemon
+Description=Odex's distributed currency daemon
 After=network.target
 
 [Service]
-User=bulwark
-Group=bulwark
+User=odex
+Group=odex
 
 Type=forking
-PIDFile=/var/lib/bulwarkd/bulwarkd.pid
+PIDFile=/var/lib/odexd/odexd.pid
 
-ExecStart=/usr/bin/bulwarkd -daemon -pid=/var/lib/bulwarkd/bulwarkd.pid \
-          -conf=/etc/bulwark/bulwark.conf -datadir=/var/lib/bulwarkd
+ExecStart=/usr/bin/odexd -daemon -pid=/var/lib/odexd/odexd.pid \
+          -conf=/etc/odex/odex.conf -datadir=/var/lib/odexd
 
-ExecStop=-/usr/bin/bulwark-cli -conf=/etc/bulwark/bulwark.conf \
-         -datadir=/var/lib/bulwarkd stop
+ExecStop=-/usr/bin/odex-cli -conf=/etc/odex/odex.conf \
+         -datadir=/var/lib/odexd stop
 
 Restart=always
 PrivateTmp=true

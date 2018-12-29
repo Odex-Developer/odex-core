@@ -79,7 +79,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/bulwark-config.h \
+           src/odex-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -132,7 +132,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/bulwark-config.h \
+           src/config/odex-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -327,7 +327,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/bulwark.moc \
+           src/qt/odex.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -368,9 +368,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/bulwark-cli.cpp \
-           src/bulwark-tx.cpp \
-           src/bulwark.cpp \
+           src/odex-cli.cpp \
+           src/odex-tx.cpp \
+           src/odex.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -460,8 +460,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/bulwark.cpp \
-           src/qt/bulwarkstrings.cpp \
+           src/qt/odex.cpp \
+           src/qt/odexstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -539,7 +539,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_bulwark.cpp \
+           src/test/test_odex.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -630,21 +630,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/bulwark.qrc src/qt/bulwark_locale.qrc
+RESOURCES += src/qt/odex.qrc src/qt/odex_locale.qrc
 
-TRANSLATIONS += src/qt/locale/bulwark_bg.ts \
-                src/qt/locale/bulwark_de.ts \
-                src/qt/locale/bulwark_en.ts \
-                src/qt/locale/bulwark_es.ts \
-                src/qt/locale/bulwark_fi.ts \
-                src/qt/locale/bulwark_fr.ts \
-                src/qt/locale/bulwark_it.ts \
-                src/qt/locale/bulwark_ja.ts \
-                src/qt/locale/bulwark_pl.ts \
-                src/qt/locale/bulwark_pt.ts \
-                src/qt/locale/bulwark_ru.ts \
-                src/qt/locale/bulwark_sk.ts \
-                src/qt/locale/bulwark_sv.ts \
-                src/qt/locale/bulwark_vi.ts \
-                src/qt/locale/bulwark_zh_CN.ts \
-                src/qt/locale/bulwark_zh_TW.ts
+TRANSLATIONS += src/qt/locale/odex_bg.ts \
+                src/qt/locale/odex_de.ts \
+                src/qt/locale/odex_en.ts \
+                src/qt/locale/odex_es.ts \
+                src/qt/locale/odex_fi.ts \
+                src/qt/locale/odex_fr.ts \
+                src/qt/locale/odex_it.ts \
+                src/qt/locale/odex_ja.ts \
+                src/qt/locale/odex_pl.ts \
+                src/qt/locale/odex_pt.ts \
+                src/qt/locale/odex_ru.ts \
+                src/qt/locale/odex_sk.ts \
+                src/qt/locale/odex_sv.ts \
+                src/qt/locale/odex_vi.ts \
+                src/qt/locale/odex_zh_CN.ts \
+                src/qt/locale/odex_zh_TW.ts

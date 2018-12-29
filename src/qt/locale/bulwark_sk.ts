@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše Bulwark adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your Odex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše Odex adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše Bulwark adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your Odex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše Odex adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Bulwark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BWKs from being stolen by malware infecting your computer.</source>
-        <translation>Bulwark sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše BWK pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>Odex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ODEXs from being stolen by malware infecting your computer.</source>
+        <translation>Odex sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše ODEX pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Naozaj chcete zašifrovať svoju peňaženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
-        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY BWK &lt;/ b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
+        <translation>Upozornenie: Ak zašifrujete svoju peňaženku a stratíte svoju prístupovú frázu, &lt;b&gt; PRÍDETE O VŠETKY ODEX &lt;/ b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a Bulwark Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu Bulwark, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a Odex Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu Odex, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>Adresa Bulwark, ktorou chcete správu podpísať</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>Adresa Odex, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Bulwark adresy</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Odex adresy</translation>
     </message>
     <message>
         <source>Encrypt Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>Bulwark adresa, ktorou bola správa podpísaná</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>Odex adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Bulwark adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Odex adresou</translation>
     </message>
     <message>
         <source>Decrypt Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
-        <source>Send coins to a Bulwark address</source>
-        <translation>Odoslať mince na adresu Bulwark</translation>
+        <source>Send coins to a Odex address</source>
+        <translation>Odoslať mince na adresu Odex</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bulwark: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a bulwark: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and odex: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a odex: identifikátory URI)</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>O Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>O Odex Core</translation>
     </message>
     <message>
-        <source>Show information about Bulwark Core</source>
-        <translation>Zobraziť informácie o Bulwark Core</translation>
+        <source>Show information about Odex Core</source>
+        <translation>Zobraziť informácie o Odex Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bulwark</source>
-        <translation>Zmeňte možnosti konfigurácie pre Bulwark</translation>
+        <source>Modify configuration options for Odex</source>
+        <translation>Zmeňte možnosti konfigurácie pre Odex</translation>
     </message>
     <message>
-        <source>Sign messages with your Bulwark addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy Bulwark, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your Odex addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy Odex, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bulwark addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Bulwark adresami</translation>
+        <source>Verify messages to ensure they were signed with specified Odex addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými Odex adresami</translation>
     </message>
     <message>
         <source>BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a Bulwark: URI or payment request</source>
-        <translation>Otvorte Bulwark: URI alebo žiadosť o platbu</translation>
+        <source>Open a Odex: URI or payment request</source>
+        <translation>Otvorte Odex: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the Bulwark Core help message to get a list with possible Bulwark command-line options</source>
-        <translation>Zobraziť pomocnú správu programu Bulwark Core a získajte zoznam možností príkazového riadka Bulwark</translation>
+        <source>Show the Odex Core help message to get a list with possible Odex command-line options</source>
+        <translation>Zobraziť pomocnú správu programu Odex Core a získajte zoznam možností príkazového riadka Odex</translation>
     </message>
     <message>
-        <source>Bulwark Core client</source>
-        <translation>Bulwark Core klient</translation>
+        <source>Odex Core client</source>
+        <translation>Odex Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bulwark.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (bulwark.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (odex.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (odex.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1140,8 +1140,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>Adresa Bulwark, ktorou chcete správu podpísať</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>Adresa Odex, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1164,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Bulwark adresy</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto Odex adresy</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>Bulwark adresa, ktorou bola správa podpísaná</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>Odex adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Bulwark adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou Odex adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1211,8 +1211,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     </context>
 <context>
@@ -1307,10 +1307,10 @@ MultiSend: %1</translation>
     </message>
     </context>
 <context>
-    <name>ZBwkControlDialog</name>
+    <name>ZOdexControlDialog</name>
     </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

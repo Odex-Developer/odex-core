@@ -1,6 +1,6 @@
 FROM ubuntu:16.04 AS dependencies
-COPY depends /Bulwark/depends
-ENV SDK_PATH=/Bulwark/depends/SDKs/
+COPY depends /Odex/depends
+ENV SDK_PATH=/Odex/depends/SDKs/
 RUN dpkg --add-architecture i386 \
   && apt-get update \
   && apt-get -y install --no-install-recommends \
@@ -69,34 +69,34 @@ RUN dpkg --add-architecture i386 \
   && rm -rf /var/lib/apt/lists/* \
   && update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix \
   && update-alternatives --set i686-w64-mingw32-g++ /usr/bin/i686-w64-mingw32-g++-posix \
-  && wget https://github.com/phracker/MacOSX-SDKs/releases/download/10.13/MacOSX10.11.sdk.tar.xz -P /Bulwark/depends/SDKs/ \
-  && tar xJf /Bulwark/depends/SDKs/MacOSX10.11.sdk.tar.xz -C /Bulwark/depends/SDKs/ \
-  && rm /Bulwark/depends/SDKs/MacOSX10.11.sdk.tar.xz \
+  && wget https://github.com/phracker/MacOSX-SDKs/releases/download/10.13/MacOSX10.11.sdk.tar.xz -P /Odex/depends/SDKs/ \
+  && tar xJf /Odex/depends/SDKs/MacOSX10.11.sdk.tar.xz -C /Odex/depends/SDKs/ \
+  && rm /Odex/depends/SDKs/MacOSX10.11.sdk.tar.xz \
   && wget https://bootstrap.pypa.io/get-pip.py \
   && python get-pip.py \
   && rm get-pip.py \
   && pip install ez_setup==0.9 \
-  && make -C /Bulwark/depends HOST=arm-linux-gnueabihf \
-  && make -C /Bulwark/depends HOST=i686-pc-linux-gnu \
-  && make -C /Bulwark/depends HOST=i686-w64-mingw32 \
-  && make -C /Bulwark/depends HOST=x86_64-unknown-linux-gnu \
-  && make -C /Bulwark/depends HOST=x86_64-w64-mingw32
+  && make -C /Odex/depends HOST=arm-linux-gnueabihf \
+  && make -C /Odex/depends HOST=i686-pc-linux-gnu \
+  && make -C /Odex/depends HOST=i686-w64-mingw32 \
+  && make -C /Odex/depends HOST=x86_64-unknown-linux-gnu \
+  && make -C /Odex/depends HOST=x86_64-w64-mingw32
 
 FROM dependencies AS base
-COPY autogen.sh /Bulwark/
-COPY build-aux /Bulwark//build-aux
-COPY configure.ac /Bulwark/
-COPY contrib /Bulwark//contrib
-COPY Makefile.am /Bulwark/
-COPY pkg.m4 /Bulwark/
-COPY qa /Bulwark/qa
-COPY share /Bulwark/share
-COPY src /Bulwark/src
-WORKDIR /Bulwark
+COPY autogen.sh /Odex/
+COPY build-aux /Odex//build-aux
+COPY configure.ac /Odex/
+COPY contrib /Odex//contrib
+COPY Makefile.am /Odex/
+COPY pkg.m4 /Odex/
+COPY qa /Odex/qa
+COPY share /Odex/share
+COPY src /Odex/src
+WORKDIR /Odex
 
 FROM base AS arm32
 ENV CXXFLAGS="-Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-narrowing"
-COPY --from=dependencies /Bulwark/depends/arm-linux-gnueabihf $(pwd)/depends/arm-linux-gnueabihf
+COPY --from=dependencies /Odex/depends/arm-linux-gnueabihf $(pwd)/depends/arm-linux-gnueabihf
 RUN ./autogen.sh \
   && ./configure \
   --enable-zmq \
@@ -111,16 +111,16 @@ RUN ./autogen.sh \
   --build=x86_64-unknown-linux-gnu \
   --host=arm-linux-gnueabihf \
   && make \
-  && cp ./src/bulwark-cli ./src/bulwarkd ./src/qt/bulwark-qt / \
+  && cp ./src/odex-cli ./src/odexd ./src/qt/odex-qt / \
   && make clean
 WORKDIR /
-RUN arm-linux-gnueabihf-strip ./bulwark-cli ./bulwark-qt ./bulwarkd  \
-  && tar czf arm32.tar.gz ./bulwark* \
-  && rm ./bulwark-cli ./bulwark-qt ./bulwarkd 
+RUN arm-linux-gnueabihf-strip ./odex-cli ./odex-qt ./odexd  \
+  && tar czf arm32.tar.gz ./odex* \
+  && rm ./odex-cli ./odex-qt ./odexd 
 
 FROM base AS linux32
 ENV CXXFLAGS="-Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-narrowing"
-COPY --from=dependencies /Bulwark/depends/i686-pc-linux-gnu $(pwd)/depends/i686-pc-linux-gnu
+COPY --from=dependencies /Odex/depends/i686-pc-linux-gnu $(pwd)/depends/i686-pc-linux-gnu
 RUN ./autogen.sh \
   && ./configure \
   --enable-zmq \
@@ -136,17 +136,17 @@ RUN ./autogen.sh \
   --build=x86_64-unknown-linux-gnu \
   --host=i686-pc-linux-gnu \
   && make \
-  && cp ./src/bulwark-cli ./src/bulwarkd ./src/qt/bulwark-qt / \
+  && cp ./src/odex-cli ./src/odexd ./src/qt/odex-qt / \
   && make clean
 WORKDIR /
-RUN strip ./bulwark-cli ./bulwark-qt ./bulwarkd  \
-  && tar czf linux32.tar.gz ./bulwark* \
-  && rm ./bulwark-cli ./bulwark-qt ./bulwarkd 
+RUN strip ./odex-cli ./odex-qt ./odexd  \
+  && tar czf linux32.tar.gz ./odex* \
+  && rm ./odex-cli ./odex-qt ./odexd 
 
 FROM base AS linux64
 ENV CXXFLAGS="-Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-narrowing"
 ENV HOST="x86_64-unknown-linux-gnu"
-COPY --from=dependencies /Bulwark/depends/x86_64-unknown-linux-gnu $(pwd)/depends/x86_64-unknown-linux-gnu
+COPY --from=dependencies /Odex/depends/x86_64-unknown-linux-gnu $(pwd)/depends/x86_64-unknown-linux-gnu
 RUN ./autogen.sh \
   && ./configure \
   --enable-zmq \
@@ -162,17 +162,17 @@ RUN ./autogen.sh \
   --build=x86_64-unknown-linux-gnu \
   --host=x86_64-unknown-linux-gnu \
   && make \
-  && cp ./src/bulwark-cli ./src/bulwarkd ./src/qt/bulwark-qt / \
+  && cp ./src/odex-cli ./src/odexd ./src/qt/odex-qt / \
   && make clean
 WORKDIR /
-RUN strip ./bulwark-cli ./bulwark-qt ./bulwarkd  \
-  && tar czf linux64.tar.gz ./bulwark* \
-  && rm ./bulwark-cli ./bulwark-qt ./bulwarkd 
+RUN strip ./odex-cli ./odex-qt ./odexd  \
+  && tar czf linux64.tar.gz ./odex* \
+  && rm ./odex-cli ./odex-qt ./odexd 
 
 FROM base AS windows32
 ENV CXXFLAGS="-Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-narrowing"
 ENV HOST="i686-w64-mingw32"
-COPY --from=dependencies /Bulwark/depends/i686-w64-mingw32 $(pwd)/depends/i686-w64-mingw32
+COPY --from=dependencies /Odex/depends/i686-w64-mingw32 $(pwd)/depends/i686-w64-mingw32
 COPY autogen.sh .
 COPY build-aux ./build-aux
 COPY configure.ac .
@@ -194,17 +194,17 @@ RUN ./autogen.sh \
   --build=x86_64-unknown-linux-gnu \
   --host=i686-w64-mingw32 \
   && make \
-  && cp ./src/bulwark-cli.exe ./src/bulwarkd.exe ./src/qt/bulwark-qt.exe / \
+  && cp ./src/odex-cli.exe ./src/odexd.exe ./src/qt/odex-qt.exe / \
   && make clean
 WORKDIR /
-RUN strip ./bulwark-cli.exe ./bulwark-qt.exe ./bulwarkd.exe  \
-  && tar czf windows32.tar.gz ./bulwark* \
-  && rm ./bulwark-cli.exe ./bulwark-qt.exe ./bulwarkd.exe
+RUN strip ./odex-cli.exe ./odex-qt.exe ./odexd.exe  \
+  && tar czf windows32.tar.gz ./odex* \
+  && rm ./odex-cli.exe ./odex-qt.exe ./odexd.exe
 
 FROM base AS windows64
 ENV CXXFLAGS="-Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter -Wno-narrowing"
 ENV HOST="x86_64-w64-mingw32"
-COPY --from=dependencies /Bulwark/depends/x86_64-w64-mingw32 $(pwd)/depends/x86_64-w64-mingw32
+COPY --from=dependencies /Odex/depends/x86_64-w64-mingw32 $(pwd)/depends/x86_64-w64-mingw32
 COPY autogen.sh .
 COPY build-aux ./build-aux
 COPY configure.ac .
@@ -226,17 +226,17 @@ RUN ./autogen.sh \
   --build=x86_64-unknown-linux-gnu \
   --host=x86_64-w64-mingw32 \
   && make \
-  && cp ./src/bulwark-cli.exe ./src/bulwarkd.exe ./src/qt/bulwark-qt.exe / \
+  && cp ./src/odex-cli.exe ./src/odexd.exe ./src/qt/odex-qt.exe / \
   && make clean
 WORKDIR /
-RUN strip ./bulwark-cli.exe ./bulwark-qt.exe ./bulwarkd.exe  \
-  && tar czf windows64.tar.gz ./bulwark* \
-  && rm ./bulwark-cli.exe ./bulwark-qt.exe ./bulwarkd.exe
+RUN strip ./odex-cli.exe ./odex-qt.exe ./odexd.exe  \
+  && tar czf windows64.tar.gz ./odex* \
+  && rm ./odex-cli.exe ./odex-qt.exe ./odexd.exe
 
 FROM alpine:3.8
 LABEL maintainer="kewagi"
 LABEL version="2.0.0.0"
-LABEL name="Bulwark Docker Builds"
+LABEL name="Odex Docker Builds"
 RUN mkdir /release
 COPY --from=arm32 /arm32.* /release
 COPY --from=linux32 /linux32.* /release

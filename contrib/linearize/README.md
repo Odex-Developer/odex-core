@@ -1,10 +1,10 @@
 # Linearize
-Construct a linear, no-fork, best version of the Bulwark blockchain. The scripts
+Construct a linear, no-fork, best version of the Odex blockchain. The scripts
 run using Python 3 but are compatible with Python 2.
 
 ## Prerequisites
 
-[nist5_hash](https://github.com/bulwark-crypto/nist5_hash) must be installed.
+[nist5_hash](https://github.com/odex-crypto/nist5_hash) must be installed.
 
 ## Configuration
 
@@ -23,7 +23,7 @@ Copy example-linearize.cfg to linearize.cfg and edit.
 * `debug_output`: Some printouts may not always be desired. If true, such output will be printed.
 * `file_timestamp`: Set each file's last-accessed and last-modified times, respectively, to the current time and to the timestamp of the most recent block written to the script's blockchain.
 * `genesis`: The hash of the genesis block in the blockchain.
-* `input`: bulwarkd blocks/ directory containing blkNNNNN.dat
+* `input`: odexd blocks/ directory containing blkNNNNN.dat
 * `hashlist`: text file containing list of block hashes created by linearize-hashes.py.
 * `max_out_sz`: Maximum size for files created by the `output_file` option. (Default: `1000*1000*1000 bytes`)
 * `netmagic`: Network magic number.
@@ -34,7 +34,7 @@ file size (`max_out_sz`).
 
 ## Usage
 
-The script requires a connection, local or remote, to a JSON-RPC server. Running `bulwarkd` or `bulwark-qt -server` will be sufficient.
+The script requires a connection, local or remote, to a JSON-RPC server. Running `odexd` or `odex-qt -server` will be sufficient.
 
 To create the bootstrap.dat, run
 

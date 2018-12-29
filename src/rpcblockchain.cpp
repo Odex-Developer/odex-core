@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Bulwark developers
+// Copyright (c) 2017-2018 The Odex developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -91,12 +91,12 @@ UniValue blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool tx
 
     result.push_back(Pair("moneysupply",ValueFromAmount(blockindex->nMoneySupply)));
 
-    UniValue zBWKObj(UniValue::VOBJ);
+    UniValue zODEXObj(UniValue::VOBJ);
     for (auto denom : libzerocoin::zerocoinDenomList) {
-        zBWKObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
+        zODEXObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
-    zBWKObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.push_back(Pair("zBWKsupply", zBWKObj));
+    zODEXObj.push_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
+    result.push_back(Pair("zODEXsupply", zODEXObj));
 
     return result;
 }
@@ -176,7 +176,7 @@ UniValue getrawmempool(const UniValue& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in bulwark\n"
+            "    \"fee\" : n,              (numeric) transaction fee in odex\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -284,16 +284,16 @@ UniValue getblock(const UniValue& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zBWKsupply\" :\n"
+            "  \"zODEXsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zBWK denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zBWK denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zBWK denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zBWK denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zBWK denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zBWK denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zBWK denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zBWK denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zODEX denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zODEX denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zODEX denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zODEX denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zODEX denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zODEX denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zODEX denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zODEX denominations\n"
             "  }\n"
             "}\n"
             "\nResult (for verbose=false):\n"
@@ -433,8 +433,8 @@ UniValue gettxout(const UniValue& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of bulwark addresses\n"
-            "     \"bulwarkaddress\"   	 	(string) bulwark address\n"
+            "     \"addresses\" : [          (array of string) array of odex addresses\n"
+            "     \"odexaddress\"   	 	(string) odex address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

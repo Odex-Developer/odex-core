@@ -12,7 +12,7 @@ Changelog 1.3.1.0 :
 * Added new spinner animation and staking status icons
 * Implemented option to disconnect/ban peers in GUI and RPC
 * Fixed links in documentation
-* Fixed wrong example Bulwark address on send screen
+* Fixed wrong example Odex address on send screen
 * Fix for deadlock detection from Bitcoin
 * Updated to openssl v1.0.2o
 ~~~~

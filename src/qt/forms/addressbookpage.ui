@@ -97,7 +97,7 @@
         <string>New</string>
        </property>
        <property name="icon" stdset="0">
-        <iconset resource="../bulwark.qrc">
+        <iconset resource="../odex.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault" stdset="0">
@@ -114,7 +114,7 @@
         <string>Copy</string>
        </property>
        <property name="icon" stdset="0">
-        <iconset resource="../bulwark.qrc">
+        <iconset resource="../odex.qrc">
          <normaloff>:/icons/editcopy</normaloff>:/icons/editcopy</iconset>
        </property>
        <property name="autoDefault" stdset="0">
@@ -131,7 +131,7 @@
         <string>Delete</string>
        </property>
        <property name="icon" stdset="0">
-        <iconset resource="../bulwark.qrc">
+        <iconset resource="../odex.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoDefault" stdset="0">
@@ -161,7 +161,7 @@
         <string>Export</string>
        </property>
        <property name="icon" stdset="0">
-        <iconset resource="../bulwark.qrc">
+        <iconset resource="../odex.qrc">
          <normaloff>:/icons/export</normaloff>:/icons/export</iconset>
        </property>
        <property name="autoDefault" stdset="0">
@@ -197,7 +197,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../bulwark.qrc"/>
+  <include location="../odex.qrc"/>
  </resources>
  <connections/>
 </ui>

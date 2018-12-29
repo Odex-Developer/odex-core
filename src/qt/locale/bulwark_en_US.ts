@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Bulwark addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your Odex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your Odex addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your Bulwark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your Bulwark addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your Odex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your Odex addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>Bulwark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BWKs from being stolen by malware infecting your computer.</source>
-        <translation>Bulwark will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your BWKs from being stolen by malware infecting your computer.</translation>
+        <source>Odex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ODEXs from being stolen by malware infecting your computer.</source>
+        <translation>Odex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ODEXs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BWK&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ODEX&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a Bulwark Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a Bulwark Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a Odex Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a Odex Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Address:</translation>
     </message>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>The Bulwark address to sign the message with</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>The Odex address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Sign the message to prove you own this Bulwark address</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Sign the message to prove you own this Odex address</translation>
     </message>
     <message>
         <source>Encrypt Key</source>
@@ -303,12 +303,12 @@
         <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>The Bulwark address the message was signed with</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>The Odex address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Verify the message to ensure it was signed with the specified Bulwark address</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Verify the message to ensure it was signed with the specified Odex address</translation>
     </message>
     <message>
         <source>Decrypt Key</source>
@@ -602,16 +602,16 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
-        <source>Send coins to a Bulwark address</source>
-        <translation>Send coins to a Bulwark address</translation>
+        <source>Send coins to a Odex address</source>
+        <translation>Send coins to a Odex address</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bulwark: URIs)</source>
-        <translation>Request payments (generates QR codes and bulwark: URIs)</translation>
+        <source>Request payments (generates QR codes and odex: URIs)</source>
+        <translation>Request payments (generates QR codes and odex: URIs)</translation>
     </message>
     <message>
         <source>Masternodes</source>
@@ -622,24 +622,24 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>About Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>About Odex Core</translation>
     </message>
     <message>
-        <source>Show information about Bulwark Core</source>
-        <translation>Show information about Bulwark Core</translation>
+        <source>Show information about Odex Core</source>
+        <translation>Show information about Odex Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Bulwark</source>
-        <translation>Modify configuration options for Bulwark</translation>
+        <source>Modify configuration options for Odex</source>
+        <translation>Modify configuration options for Odex</translation>
     </message>
     <message>
-        <source>Sign messages with your Bulwark addresses to prove you own them</source>
-        <translation>Sign messages with your Bulwark addresses to prove you own them</translation>
+        <source>Sign messages with your Odex addresses to prove you own them</source>
+        <translation>Sign messages with your Odex addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bulwark addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Bulwark addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Odex addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Odex addresses</translation>
     </message>
     <message>
         <source>BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a Bulwark: URI or payment request</source>
-        <translation>Open a Bulwark: URI or payment request</translation>
+        <source>Open a Odex: URI or payment request</source>
+        <translation>Open a Odex: URI or payment request</translation>
     </message>
     <message>
         <source>Blockchain explorer</source>
@@ -682,16 +682,16 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the Bulwark Core help message to get a list with possible Bulwark command-line options</source>
-        <translation>Show the Bulwark Core help message to get a list with possible Bulwark command-line options</translation>
+        <source>Show the Odex Core help message to get a list with possible Odex command-line options</source>
+        <translation>Show the Odex Core help message to get a list with possible Odex command-line options</translation>
     </message>
     <message>
-        <source>Bulwark Core client</source>
-        <translation>Bulwark Core client</translation>
+        <source>Odex Core client</source>
+        <translation>Odex Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bulwark network</source>
-        <translation><numerusform>%n active connection(s) to Bulwark network</numerusform><numerusform>%n active connection(s) to Bulwark network</numerusform></translation>
+        <source>%n active connection(s) to Odex network</source>
+        <translation><numerusform>%n active connection(s) to Odex network</numerusform><numerusform>%n active connection(s) to Odex network</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -837,8 +837,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bulwark.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (bulwark.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (odex.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (odex.conf).</translation>
     </message>
 </context>
 <context>
@@ -1138,8 +1138,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bulwark address.</source>
-        <translation>The entered address "%1" is not a valid Bulwark address.</translation>
+        <source>The entered address "%1" is not a valid Odex address.</source>
+        <translation>The entered address "%1" is not a valid Odex address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Bulwark Core</source>
-        <translation>About Bulwark Core</translation>
+        <source>About Odex Core</source>
+        <translation>About Odex Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to Bulwark Core.</source>
-        <translation>Welcome to Bulwark Core.</translation>
+        <source>Welcome to Odex Core.</source>
+        <translation>Welcome to Odex Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Bulwark Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Bulwark Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Odex Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Odex Core will store its data.</translation>
     </message>
     <message>
-        <source>Bulwark Core will download and store a copy of the Bulwark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Bulwark Core will download and store a copy of the Bulwark block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Odex Core will download and store a copy of the Odex block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Odex Core will download and store a copy of the Odex block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,12 +1401,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Bulwark addresses after it matures.
-To Add: enter percentage to give and Bulwark address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Odex addresses after it matures.
+To Add: enter percentage to give and Odex address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Bulwark addresses after it matures.
-To Add: enter percentage to give and Bulwark address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Odex addresses after it matures.
+To Add: enter percentage to give and Odex address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1544,48 +1544,48 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 5000 BWK</source>
-        <translation>Use 2 separate masternodes to mix funds up to 5000 BWK</translation>
+        <source>Use 2 separate masternodes to mix funds up to 5000 ODEX</source>
+        <translation>Use 2 separate masternodes to mix funds up to 5000 ODEX</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 5000 BWK</source>
-        <translation>Use 8 separate masternodes to mix funds up to 5000 BWK</translation>
+        <source>Use 8 separate masternodes to mix funds up to 5000 ODEX</source>
+        <translation>Use 8 separate masternodes to mix funds up to 5000 ODEX</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 BWK to anonymize 5000 BWK</source>
-        <translation>This option is the quickest and will cost about ~0.025 BWK to anonymize 5000 BWK</translation>
+        <source>This option is the quickest and will cost about ~0.025 ODEX to anonymize 5000 ODEX</source>
+        <translation>This option is the quickest and will cost about ~0.025 ODEX to anonymize 5000 ODEX</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 BWK to anonymize 5000 BWK</source>
-        <translation>This option is moderately fast and will cost about 0.05 BWK to anonymize 5000 BWK</translation>
+        <source>This option is moderately fast and will cost about 0.05 ODEX to anonymize 5000 ODEX</source>
+        <translation>This option is moderately fast and will cost about 0.05 ODEX to anonymize 5000 ODEX</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 BWK per 5000 BWK you anonymize.</source>
-        <translation>0.1 BWK per 5000 BWK you anonymize.</translation>
+        <source>0.1 ODEX per 5000 ODEX you anonymize.</source>
+        <translation>0.1 ODEX per 5000 ODEX you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Bulwark's configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Bulwark's configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Odex's configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Odex's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Bulwark's configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Bulwark's configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Odex's configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Odex's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Bulwark's configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Bulwark's configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Odex's configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Odex's configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1646,8 +1646,8 @@ Please check the address and try again.</translation>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
-        <source>Automatically open the Bulwark client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Bulwark client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Odex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Odex client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1666,12 +1666,12 @@ Please check the address and try again.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Bulwark after logging in to the system.</source>
-        <translation>Automatically start Bulwark after logging in to the system.</translation>
+        <source>Automatically start Odex after logging in to the system.</source>
+        <translation>Automatically start Odex after logging in to the system.</translation>
     </message>
     <message>
-        <source>Start Bulwark on system login</source>
-        <translation>Start Bulwark on system login</translation>
+        <source>Start Odex on system login</source>
+        <translation>Start Odex on system login</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1686,8 +1686,8 @@ Please check the address and try again.</translation>
         <translation>This amount acts as a threshold to turn off Obfuscation once it's reached.</translation>
     </message>
     <message>
-        <source>Amount of Bulwark to keep anonymized</source>
-        <translation>Amount of Bulwark to keep anonymized</translation>
+        <source>Amount of Odex to keep anonymized</source>
+        <translation>Amount of Odex to keep anonymized</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1714,22 +1714,22 @@ Please check the address and try again.</translation>
         <translation>Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Bulwark.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Bulwark.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Odex.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Odex.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bulwark-project/bulwark-project-translations</source>
+https://www.transifex.com/odex-project/odex-project-translations</source>
         <translation>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/bulwark-project/bulwark-project-translations</translation>
+https://www.transifex.com/odex-project/odex-project-translations</translation>
     </message>
     <message>
         <source>Map port using UPnP</source>
         <translation>Map port using UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bulwark network through a SOCKS5 proxy.</source>
-        <translation>Connect to the Bulwark network through a SOCKS5 proxy.</translation>
+        <source>Connect to the Odex network through a SOCKS5 proxy.</source>
+        <translation>Connect to the Odex network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy IP:</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Balances</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bulwark network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Bulwark network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Odex network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Odex network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 BWK / 0 Rounds</source>
-        <translation>0 BWK / 0 Rounds</translation>
+        <source>0 ODEX / 0 Rounds</source>
+        <translation>0 ODEX / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2092,12 +2092,12 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <source>Cannot start bulwark: click-to-pay handler</source>
-        <translation>Cannot start bulwark: click-to-pay handler</translation>
+        <source>Cannot start odex: click-to-pay handler</source>
+        <translation>Cannot start odex: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bulwark address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid Bulwark address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Odex address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid Odex address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2182,8 +2182,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a Bulwark address (e.g. %1)</source>
-        <translation>Enter a Bulwark address (e.g. %1)</translation>
+        <source>Enter a Odex address (e.g. %1)</source>
+        <translation>Enter a Odex address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2316,8 +2316,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Bulwark debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Bulwark debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Odex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Odex debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2484,8 +2484,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Bulwark RPC console.</source>
-        <translation>Welcome to the Bulwark RPC console.</translation>
+        <source>Welcome to the Odex RPC console.</source>
+        <translation>Welcome to the Odex RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2555,12 +2555,12 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>An optional label to associate with the new receiving address.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bulwark network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bulwark network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Odex network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Odex network.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Bulwark network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Bulwark network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Odex network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Odex network.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2792,8 +2792,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 BWK</source>
-        <translation>0 BWK</translation>
+        <source>0 ODEX</source>
+        <translation>0 ODEX</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2840,16 +2840,16 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBWKs in fee,&lt;br /&gt;while "at least" pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBWKs in fee,&lt;br /&gt;while "at least" pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uODEXs in fee,&lt;br /&gt;while "at least" pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uODEXs in fee,&lt;br /&gt;while "at least" pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBWKs in fee,&lt;br /&gt;while "total at least" pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uBWKs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uBWKs in fee,&lt;br /&gt;while "total at least" pays 1000 uBWKs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uODEXs in fee,&lt;br /&gt;while "total at least" pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uODEXs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uODEXs in fee,&lt;br /&gt;while "total at least" pays 1000 uODEXs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Bulwark transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Bulwark transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Odex transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Odex transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2952,8 +2952,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>anonymous funds</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bulwark address</source>
-        <translation>Warning: Invalid Bulwark address</translation>
+        <source>Warning: Invalid Odex address</source>
+        <translation>Warning: Invalid Odex address</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3059,8 +3059,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Pay To:</translation>
     </message>
     <message>
-        <source>The Bulwark address to send the payment to</source>
-        <translation>The Bulwark address to send the payment to</translation>
+        <source>The Odex address to send the payment to</source>
+        <translation>The Odex address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3099,8 +3099,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Bulwark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bulwark network.</source>
-        <translation>A message that was attached to the Bulwark: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bulwark network.</translation>
+        <source>A message that was attached to the Odex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Odex network.</source>
+        <translation>A message that was attached to the Odex: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Odex network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3126,8 +3126,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Bulwark Core is shutting down...</source>
-        <translation>Bulwark Core is shutting down...</translation>
+        <source>Odex Core is shutting down...</source>
+        <translation>Odex Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3149,8 +3149,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The Bulwark address to sign the message with</source>
-        <translation>The Bulwark address to sign the message with</translation>
+        <source>The Odex address to sign the message with</source>
+        <translation>The Odex address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3181,16 +3181,16 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bulwark address</source>
-        <translation>Sign the message to prove you own this Bulwark address</translation>
+        <source>Sign the message to prove you own this Odex address</source>
+        <translation>Sign the message to prove you own this Odex address</translation>
     </message>
     <message>
-        <source>The Bulwark address the message was signed with</source>
-        <translation>The Bulwark address the message was signed with</translation>
+        <source>The Odex address the message was signed with</source>
+        <translation>The Odex address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bulwark address</source>
-        <translation>Verify the message to ensure it was signed with the specified Bulwark address</translation>
+        <source>Verify the message to ensure it was signed with the specified Odex address</source>
+        <translation>Verify the message to ensure it was signed with the specified Odex address</translation>
     </message>
     <message>
         <source>Sign Message</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Bulwark Core</source>
-        <translation>Bulwark Core</translation>
+        <source>Odex Core</source>
+        <translation>Odex Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3292,8 +3292,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The Bulwark Core developers</source>
-        <translation>The Bulwark Core developers</translation>
+        <source>The Odex Core developers</source>
+        <translation>The Odex Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BWK.</source>
-        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 BWK.</translation>
+        <source>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ODEX.</source>
+        <translation>SwiftX doesn't support sending values that high yet. Transactions are currently limited to %1 ODEX.</translation>
     </message>
 </context>
 <context>
@@ -3884,7 +3884,7 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
     </message>
 </context>
 <context>
-    <name>bulwark-core</name>
+    <name>odex-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
@@ -3910,8 +3910,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Bulwark Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Bulwark Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Odex Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Odex Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3930,8 +3930,8 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <source>Disable all Bulwark specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all Bulwark specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all Odex specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all Odex specific functionality (Masternodes, Obfuscation, SwiftX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3974,12 +3974,12 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in BWK/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in BWK/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in ODEX/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in ODEX/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in BWK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in BWK/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in ODEX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in ODEX/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4082,44 +4082,44 @@ https://www.transifex.com/bulwark-project/bulwark-project-translations</translat
         <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use bulwarkd, or the -server option to bulwark-qt, you must set an rpcpassword in the configuration file:
+        <source>To use odexd, or the -server option to odex-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bulwarkrpc
+rpcuser=odexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Odex Alert" admin@foo.com
 </source>
-        <translation>To use bulwarkd, or the -server option to bulwark-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use odexd, or the -server option to odex-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=bulwarkrpc
+rpcuser=odexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "Odex Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Bulwark Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Bulwark Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Odex Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Odex Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 BWK.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 BWK.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 ODEX.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 5000 ODEX.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 5000 BWK.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 5000 BWK.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 5000 ODEX.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 5000 ODEX.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4134,8 +4134,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bulwark Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Bulwark Core will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Odex Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Odex Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4282,12 +4282,12 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Bulwark Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Bulwark Core Developers</translation>
+        <source>Copyright (C) 2015-%i The Odex Core Developers</source>
+        <translation>Copyright (C) 2015-%i The Odex Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2017-%i The Bulwark Core Developers</source>
-        <translation>Copyright (C) 2017-%i The Bulwark Core Developers</translation>
+        <source>Copyright (C) 2017-%i The Odex Core Developers</source>
+        <translation>Copyright (C) 2017-%i The Odex Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4358,8 +4358,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Bulwark Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Bulwark Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Odex Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Odex Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4410,8 +4410,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in BWK/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in BWK/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in ODEX/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in ODEX/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4470,8 +4470,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Bulwark Core is shutting down.</source>
-        <translation>Initialization sanity check failed. Bulwark Core is shutting down.</translation>
+        <source>Initialization sanity check failed. Odex Core is shutting down.</source>
+        <translation>Initialization sanity check failed. Odex Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4582,8 +4582,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N BWK anonymized (default: %u)</source>
-        <translation>Keep N BWK anonymized (default: %u)</translation>
+        <source>Keep N ODEX anonymized (default: %u)</source>
+        <translation>Keep N ODEX anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5090,8 +5090,8 @@ for example: alertnotify=echo %%s | mail -s "Bulwark Alert" admin@foo.com
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Bulwark Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart Bulwark Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart Odex Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart Odex Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

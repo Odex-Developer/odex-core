@@ -6,7 +6,7 @@
  * @copyright  Copyright 2017 PIVX Developers
  * @license    This project is released under the MIT license.
  **/
-// Copyright (c) 2018 The Bulwark Core Developers
+// Copyright (c) 2018 The Odex Core Developers
 
 #include "Denominations.h"
 #include "amount.h"
@@ -64,7 +64,7 @@ CoinDenomination AmountToZerocoinDenomination(CAmount amount)
 }
 
 // return the highest denomination that is less than or equal to the amount given
-// use case: converting BWK to zBWK without user worrying about denomination math themselves
+// use case: converting ODEX to zODEX without user worrying about denomination math themselves
 CoinDenomination AmountToClosestDenomination(CAmount nAmount, CAmount& nRemaining)
 {
     if (nAmount < 1 * COIN)

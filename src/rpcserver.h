@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * Bulwark RPC command dispatcher.
+ * Odex RPC command dispatcher.
  */
 class CRPCTable
 {

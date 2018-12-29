@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package bulwarkd/bulwark-qt
-for Debian-based Linux systems. If you compile bulwarkd/bulwark-qt yourself, there are some useful files here.
+This directory contains files used to package odexd/odex-qt
+for Debian-based Linux systems. If you compile odexd/odex-qt yourself, there are some useful files here.
 
-## bulwark: URI support ##
+## odex: URI support ##
 
 
-bulwark-qt.desktop  (Gnome / Open Desktop)
+odex-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install bulwark-qt.desktop
+	sudo desktop-file-install odex-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your bulwarkqt binary to `/usr/bin`
-and the `../../share/pixmaps/bulwark128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your odexqt binary to `/usr/bin`
+and the `../../share/pixmaps/odex128.png` to `/usr/share/pixmaps`
 
-bulwark-qt.protocol (KDE)
+odex-qt.protocol (KDE)
 

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The Bulwark developers
+// Copyright (c) 2017-2018 The Odex developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -243,10 +243,10 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop Bulwark server.");
+            "\nStop Odex server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "Bulwark server stopping";
+    return "Odex server stopping";
 }
 
 
@@ -329,35 +329,35 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
         /* Pivx features */
-        {"bulwark", "masternode", &masternode, true, true, false},
-        {"bulwark", "listmasternodes", &listmasternodes, true, true, false},
-        {"bulwark", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"bulwark", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"bulwark", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"bulwark", "masternodedebug", &masternodedebug, true, true, false},
-        {"bulwark", "startmasternode", &startmasternode, true, true, false},
-        {"bulwark", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"bulwark", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"bulwark", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"bulwark", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"bulwark", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"bulwark", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"bulwark", "mnbudget", &mnbudget, true, true, false},
-        {"bulwark", "preparebudget", &preparebudget, true, true, false},
-        {"bulwark", "submitbudget", &submitbudget, true, true, false},
-        {"bulwark", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"bulwark", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"bulwark", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"bulwark", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"bulwark", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"bulwark", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"bulwark", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"bulwark", "checkbudgets", &checkbudgets, true, true, false},
-        {"bulwark", "mnsync", &mnsync, true, true, false},
-        {"bulwark", "spork", &spork, true, true, false},
-        {"bulwark", "getpoolinfo", &getpoolinfo, true, true, false},
+        {"odex", "masternode", &masternode, true, true, false},
+        {"odex", "listmasternodes", &listmasternodes, true, true, false},
+        {"odex", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"odex", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"odex", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"odex", "masternodedebug", &masternodedebug, true, true, false},
+        {"odex", "startmasternode", &startmasternode, true, true, false},
+        {"odex", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"odex", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"odex", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"odex", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"odex", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"odex", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"odex", "mnbudget", &mnbudget, true, true, false},
+        {"odex", "preparebudget", &preparebudget, true, true, false},
+        {"odex", "submitbudget", &submitbudget, true, true, false},
+        {"odex", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"odex", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"odex", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"odex", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"odex", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"odex", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"odex", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"odex", "checkbudgets", &checkbudgets, true, true, false},
+        {"odex", "mnsync", &mnsync, true, true, false},
+        {"odex", "spork", &spork, true, true, false},
+        {"odex", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"bulwark", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"odex", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -1088,7 +1088,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> bulwark-cli " + methodname + " " + args + "\n";
+    return "> odex-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
