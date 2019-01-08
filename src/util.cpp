@@ -445,7 +445,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Odex";
 #else
     // Unix
-    return pathRet / ".odex";
+    return pathRet / ".Odexcore";
 #endif
 #endif
 }
