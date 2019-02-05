@@ -55,7 +55,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-        (0, uint256("0x00000eec3130c1dae85736c987cd2e0443db34bab6c8aad364682a23d6950eaa"));
+        (0, uint256("0x000000ceb74b5e4f7176985092aed18c08dde86339cba53496b7ebeaa743c7f1"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -67,7 +67,7 @@ static const Checkpoints::CCheckpointData data = {
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-        (0, uint256("0x00000ccb905aef2fbeca647eb7b27782fbacebab25ae16dc96bbedd6237d57a9"));
+        (0, uint256("0x000009ea7e47d42ded44871cec8eb79b31be9365f85b586edc0427048f706030"));
 
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
@@ -136,7 +136,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "ODEX - Launch (12/28/2018)";
+        const char* pszTimestamp = "ODEX - Launch (2/4/2018)";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -147,9 +147,9 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1546061079;
+        genesis.nTime = 1546061080;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();;
-        genesis.nNonce = 2091500;
+        genesis.nNonce = 56322;
 
   	    hashGenesisBlock = genesis.GetHash();
 
@@ -180,8 +180,8 @@ public:
         }
         */
 
-        assert(hashGenesisBlock == uint256("0x00000c495edc842b693f7a1c4e3f512819b5ba62ba1b6a36e288720063984ace"));
-        assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
+        assert(hashGenesisBlock == uint256("0x000000ceb74b5e4f7176985092aed18c08dde86339cba53496b7ebeaa743c7f1"));
+        assert(genesis.hashMerkleRoot == uint256("0x83f083178fc29bed73af120d7fb313c4c5080b3a9e091df8533520ec501d7634"));
 
         vSeeds.push_back(CDNSSeedData("149.28.57.251", "149.28.57.251"));
 
@@ -272,8 +272,8 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1537896086;
-        genesis.nNonce = 2385723;
+        genesis.nTime = 1537896087;
+        genesis.nNonce = 2106553;
         genesis.nBits = bnProofOfWorkLimit.GetCompact();
 
         hashGenesisBlock = genesis.GetHash();
@@ -305,8 +305,8 @@ public:
         }
         */
 
-        assert(hashGenesisBlock == uint256("0x00000ccb905aef2fbeca647eb7b27782fbacebab25ae16dc96bbedd6237d57a9"));
-        assert(genesis.hashMerkleRoot == uint256("0x58f218876870107a98ad658f229f1e3c724ef6db153acc89fff104feec3c5e97"));
+        assert(hashGenesisBlock == uint256("0x000009ea7e47d42ded44871cec8eb79b31be9365f85b586edc0427048f706030"));
+        assert(genesis.hashMerkleRoot == uint256("0x83f083178fc29bed73af120d7fb313c4c5080b3a9e091df8533520ec501d7634"));
 
         vSeeds.push_back(CDNSSeedData("149.28.57.251", "149.28.57.251"));
         vFixedSeeds.clear();
@@ -377,9 +377,9 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 22149;
-//        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
-        vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
-        vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
+
+        vFixedSeeds.clear();
+        vSeeds.clear();
 
         fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = true;
