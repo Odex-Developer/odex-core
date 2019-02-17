@@ -2173,25 +2173,32 @@ int64_t GetBlockValue(int blockHeight)
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
     int64_t nMasternodeSubsidy = 0;
-    if (nHeight <  265000 && nHeight >= 10000) {
-        nMasternodeSubsidy = blockValue * (3 / 5);
+
+    /* Weird Error w/ Fractions (MNs don't get paid) */
+    if (nHeight < 12000 && nHeight >= 10000) {
+        nMasternodeSubsidy = blockValue * (3/5);
+
+    /* Solution to Fraction Error */
+    } else if (nHeight < 265000 && nHeight >= 12000) {
+        nMasternodeSubsidy = blockValue * 0.600;
     } else if (nHeight <  530000 && nHeight >= 265000) {
-        nMasternodeSubsidy = blockValue * (2.75 / 4.5);
+        nMasternodeSubsidy = blockValue * 0.610;
     } else if (nHeight <  1060000 && nHeight >= 530000) {
-        nMasternodeSubsidy = blockValue * (2.5 / 4);
+        nMasternodeSubsidy = blockValue * 0.625;
     } else if (nHeight <  1590000 && nHeight >= 1060000) {
-        nMasternodeSubsidy = blockValue * (2.25 / 3.5);
+        nMasternodeSubsidy = blockValue * 0.640;
     } else if (nHeight <  2120000 && nHeight >= 1590000) {
-        nMasternodeSubsidy = blockValue * (2 / 3);
+        nMasternodeSubsidy = blockValue * 0.660;
     } else if (nHeight <  2650000 && nHeight >= 2120000) {
-        nMasternodeSubsidy = blockValue * (1.5 / 2);
+        nMasternodeSubsidy = blockValue * 0.750;
     } else if (nHeight <  3180000 && nHeight >= 2650000) {
-        nMasternodeSubsidy = blockValue * (1 / 1.4);
+        nMasternodeSubsidy = blockValue * 0.710;
     } else if (nHeight <  3710000 && nHeight >= 3180000) {
-        nMasternodeSubsidy = blockValue * (0.75 / 1.05);
+        nMasternodeSubsidy = blockValue * 0.710;
     } else if (nHeight >= 3710000) {
-        nMasternodeSubsidy = blockValue * (0.5 / 0.75);
+        nMasternodeSubsidy = blockValue * 0.660;
     }
+
     return nMasternodeSubsidy;
 }
 
